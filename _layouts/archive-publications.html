@@ -1,1 +1,58 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+
+<h1>{{ page.title }}</h1>
+
+<div class="paper-list">
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
+      **Jiaze Li**, Zhiling Guo, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan
+    </div>
+    <div class="paper-image">
+      <img src="/ICAE2024.png" alt="ICAE2024" />
+    </div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Another Paper Title</strong><br>
+      **Another Author**, Co-author, etc.
+    </div>
+    <div class="paper-image">
+      <img src="/path_to_another_image.png" alt="Another Image" />
+    </div>
+  </div>
+  
+  <!-- Add more papers here as needed -->
+</div>
+
+<style>
+  .paper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .paper-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .paper-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .paper-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
 
