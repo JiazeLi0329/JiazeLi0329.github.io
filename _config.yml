@@ -4,7 +4,7 @@ description: A student
 avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /hanabi.jpeg
 
 # Gems
 plugins:
