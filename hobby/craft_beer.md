@@ -21,18 +21,15 @@ permalink: /hobby/craft_beer/
   <div class="image-column">
     <img src="/hobby_images/craft_beer_2.jpg" alt="Craft Beer 2" />
   </div>
-</div>
-
-<div class="image-row">
   <div class="image-column">
     <img src="/hobby_images/craft_beer_3.jpg" alt="Craft Beer 3" />
   </div>
+</div>
+
+<div class="image-row"> 
   <div class="image-column">
     <img src="/hobby_images/craft_beer_4.jpg" alt="Craft Beer 4" />
   </div>
-</div>
-
-<div class="image-row">
   <div class="image-column">
     <img src="/hobby_images/craft_beer_5.jpg" alt="Craft Beer 5" />
   </div>
@@ -40,6 +37,7 @@ permalink: /hobby/craft_beer/
     <img src="/hobby_images/craft_beer_6.jpg" alt="Craft Beer 6" />
   </div>
 </div>
+
 
 <!-- 返回按钮 -->
 <a href="/hobby">← Back to Hobby</a>
