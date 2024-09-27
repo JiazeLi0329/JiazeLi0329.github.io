@@ -38,7 +38,6 @@ permalink: /hobby/craft_beer/
   </div>
 </div>
 
-
 <!-- 返回按钮 -->
 <a href="/hobby">← Back to Hobby</a>
 
@@ -64,19 +63,20 @@ permalink: /hobby/craft_beer/
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.5em; /* 将字体大小从 2em 调整为 1.5em */
     margin-bottom: 20px;
     text-align: center;
   }
 
   p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1em; /* 将段落字体大小从 1.2em 调整为 1em */
+    line-height: 1.4; /* 调整行高 */
     margin-bottom: 20px;
   }
 
   a {
     color: #4CAF50;
+    font-size: 0.9em; /* 将链接的字体大小调小 */
     text-decoration: none;
   }
 
@@ -84,3 +84,4 @@ permalink: /hobby/craft_beer/
     color: #388E3C;
   }
 </style>
+
