@@ -1,76 +1,75 @@
 ---
 layout: default
-title: blog
+title: Blog
 ---
 
 {% include home-header.html %}
 
 <!-- 博客页面标题 -->
-<div class="blog-section">
-  <h1 class="page-title">Blog</h1>
-</div>
+<h1>{{ page.title }}</h1>
 
-<!-- 博客文章列表 -->
-<div class="posts">
+<div class="post-list">
+  <!-- 遍历博客文章 -->
   {% for post in site.posts %}
-  <section class="post-entry">
-    <h2 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-
-    <div class="post-meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-      <span> | {{ post.category }}</span>
+  <div class="post-item">
+    <div class="post-info">
+      <strong>{{ post.title }}</strong><br>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><br>
+      <em>{{ post.category }}</em>
     </div>
-
-    <p>{{ post.excerpt | strip_html }}</p>
-  </section>
+    <div class="post-excerpt">
+      <p>{{ post.excerpt | strip_html }}</p>
+      <a href="{{ post.url | relative_url }}">Read More</a>
+    </div>
+  </div>
   {% endfor %}
 </div>
 
-<!-- 自定义样式 -->
 <style>
-  .blog-section {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .page-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .posts {
-    max-width: 800px;
-    margin: 0 auto;
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
   }
-
-  .post-entry {
-    margin-bottom: 40px;
+  
+  .post-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd; /* 添加下划线以区分不同文章 */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-info {
+    flex: 1;
+    font-size: 0.8em; /* 调整字体大小为80% */
+    line-height: 1.5;
+    padding-right: 20px;
   }
 
-  .post-title {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-  }
-
-  .post-meta {
+  .post-excerpt {
+    flex: 1;
     font-size: 0.9em;
-    color: #777;
-    margin-bottom: 15px;
+    color: #555;
   }
 
-  .post-meta time {
+  .post-excerpt a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
     font-weight: bold;
   }
 
-  .post-entry p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
+  .post-excerpt a:hover {
+    color: #388E3C;
+  }
+
+  /* Optional: Adjust the size of the h1 title */
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
 </style>
