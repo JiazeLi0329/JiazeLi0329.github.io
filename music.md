@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Music
+permalink: /hobby/music/
 ---
 
 <h1>Music</h1>
