@@ -32,3 +32,23 @@ Some pics:
 </div>
 
 Their [Instagram page](https://www.instagram.com/nuttari_nari/).
+
+<style>
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* 增加图片之间的间距 */
+  }
+
+  .image-column {
+    flex: 1;
+    padding: 10px;
+    max-width: 45%; /* 限制每张图片占据45%的宽度，缩小图片 */
+  }
+
+  .image-column img {
+    width: 100%; /* 图片占满列宽 */
+    height: auto; /* 保持图片的原始宽高比 */
+    border-radius: 8px; /* 圆角效果 */
+  }
+</style>
