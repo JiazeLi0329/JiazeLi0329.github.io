@@ -4,3 +4,6 @@
 - type: blog
   title: Blog
   url: /blog/
+- type: hobby
+  title: Hobby
+  url: /hobby/
