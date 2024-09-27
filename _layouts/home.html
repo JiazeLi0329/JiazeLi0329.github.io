@@ -4,9 +4,18 @@ layout: default
 
 {% include home-header.html %}
 
-<!-- 添加欢迎信息 -->
+<!-- 欢迎信息 -->
 <div class="welcome-section">
   <h1 class="welcome-title">Welcome to My Personal Website</h1>
+</div>
+
+<!-- 中间图片 -->
+<div class="profile-image">
+  <img src="/path_to_your_image.jpg" alt="Profile Image" />
+</div>
+
+<!-- 个人介绍 -->
+<div class="about-section">
   <p>
     Jiaze Li is a third-year student at Beijing University of 
     Technology’s Beijing-Dublin International College, where he is pursuing an undergraduate degree
@@ -14,35 +23,72 @@ layout: default
   </p>
 </div>
 
+<!-- 底部导航按钮 -->
+<div class="navigation-section">
+  <a href="/publications/" class="nav-button">Publications</a>
+  <a href="/blog/" class="nav-button">Blog</a>
+  <a href="/hobby/" class="nav-button">Hobby</a>
+</div>
+
 <!-- 自定义样式 -->
 <style>
-  /* 设置背景图片 */
+  /* 欢迎信息样式 */
   .welcome-section {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 100px 20px; /* 添加内边距以便背景图片显得更好 */
-    background-image: url('/back.jpg'); /* 替换为你的背景图片路径 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* 白色字体在背景图上更易阅读 */
+    margin-top: 40px;
   }
 
-  /* 艺术字效果 */
   .welcome-title {
-    font-family: 'Brush Script MT', cursive; /* 更改字体为艺术字体，选择适合的字体 */
-    font-size: 4em; /* 调整字体大小 */
-    letter-spacing: 2px; /* 字母间距 */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* 添加文字阴影效果 */
-    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4em;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: #333;
   }
 
-  /* 修改简介部分的样式 */
-  .welcome-section p {
-    font-size: 1.5em; /* 增大字体 */
-    color: rgba(255, 255, 255, 0.9); /* 白色字体，并且稍微透明 */
-    max-width: 800px; /* 设置最大宽度 */
-    margin: 0 auto; /* 居中对齐 */
+  /* 图片样式 */
+  .profile-image {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .profile-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+  }
+
+  /* 个人介绍样式 */
+  .about-section {
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
     line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  /* 底部导航按钮样式 */
+  .navigation-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .nav-button {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-button:hover {
+    background-color: #45a049;
   }
 </style>
+
