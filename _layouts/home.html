@@ -6,7 +6,7 @@ layout: default
 
 <!-- 添加欢迎信息 -->
 <div class="welcome-section">
-  <h1>Welcome to My Personal Website</h1>
+  <h1 class="welcome-title">Welcome to My Personal Website</h1>
   <p>
     Jiaze Li is a third-year student at Beijing University of 
     Technology’s Beijing-Dublin International College, where he is pursuing an undergraduate degree
@@ -14,22 +14,35 @@ layout: default
   </p>
 </div>
 
-
-
 <!-- 自定义样式 -->
 <style>
+  /* 设置背景图片 */
   .welcome-section {
     text-align: center;
     margin-bottom: 40px;
+    padding: 100px 20px; /* 添加内边距以便背景图片显得更好 */
+    background-image: url('/path_to_your_background_image.jpg'); /* 替换为你的背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* 白色字体在背景图上更易阅读 */
   }
 
-  .welcome-section h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  /* 艺术字效果 */
+  .welcome-title {
+    font-family: 'Brush Script MT', cursive; /* 更改字体为艺术字体，选择适合的字体 */
+    font-size: 4em; /* 调整字体大小 */
+    letter-spacing: 2px; /* 字母间距 */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* 添加文字阴影效果 */
+    margin-bottom: 20px;
   }
 
+  /* 修改简介部分的样式 */
   .welcome-section p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.5em; /* 增大字体 */
+    color: rgba(255, 255, 255, 0.9); /* 白色字体，并且稍微透明 */
+    max-width: 800px; /* 设置最大宽度 */
+    margin: 0 auto; /* 居中对齐 */
+    line-height: 1.6;
   }
 </style>
