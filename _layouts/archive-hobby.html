@@ -1,0 +1,99 @@
+---
+layout: default
+title: Hobby
+---
+
+{% include home-header.html %}
+
+<!-- Hobby 页面标题 -->
+<h1>{{ page.title }}</h1>
+
+<div class="hobby-list">
+  <!-- 音乐 -->
+  <div class="hobby-item">
+    <div class="hobby-info">
+      <h2>Music</h2>
+      <p>Music has always been a huge part of my life. I enjoy listening to various genres, from classical to rock, and I also love playing the guitar in my free time.</p>
+    </div>
+    <div class="hobby-image">
+      <img src="/hobby_images/music.jpg" alt="Music" />
+    </div>
+  </div>
+
+  <!-- 精酿啤酒 -->
+  <div class="hobby-item">
+    <div class="hobby-info">
+      <h2>Craft Beer</h2>
+      <p>I'm a craft beer enthusiast and enjoy exploring different breweries to try new flavors. There's something special about discovering unique brews with friends.</p>
+    </div>
+    <div class="hobby-image">
+      <img src="/hobby_images/craft_beer.jpg" alt="Craft Beer" />
+    </div>
+  </div>
+
+  <!-- 动画 -->
+  <div class="hobby-item">
+    <div class="hobby-info">
+      <h2>Animation</h2>
+      <p>Animation has always captivated me. Whether it's classic films or new series, I find it fascinating how stories are brought to life through this medium.</p>
+    </div>
+    <div class="hobby-image">
+      <img src="/hobby_images/animation.jpg" alt="Animation" />
+    </div>
+  </div>
+
+  <!-- 足球 -->
+  <div class="hobby-item">
+    <div class="hobby-info">
+      <h2>Football</h2>
+      <p>As a football fan, I love playing the sport with friends on weekends and following major leagues around the world. It's both fun and a great way to stay active.</p>
+    </div>
+    <div class="hobby-image">
+      <img src="/hobby_images/football.jpg" alt="Football" />
+    </div>
+  </div>
+</div>
+
+<!-- 自定义样式 -->
+<style>
+  .hobby-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .hobby-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hobby-info {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding-right: 20px;
+  }
+
+  .hobby-image {
+    max-width: 200px; /* 控制图片宽度 */
+  }
+
+  .hobby-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 图片圆角效果 */
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+</style>
