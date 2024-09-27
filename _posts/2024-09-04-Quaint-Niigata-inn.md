@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quaint Niigata inn"
+title: "Quaint Niigata Inn"
 date: 2024-09-04
 categories: blog
 ---
@@ -33,6 +33,11 @@ Some pics:
 
 Their [Instagram page](https://www.instagram.com/nuttari_nari/).
 
+<!-- 返回键 -->
+<div class="back-button">
+  <a href="/blog" class="button">← Back to Blog</a>
+</div>
+
 <style>
   .image-row {
     display: flex;
@@ -51,4 +56,26 @@ Their [Instagram page](https://www.instagram.com/nuttari_nari/).
     height: auto; /* 保持图片的原始宽高比 */
     border-radius: 8px; /* 圆角效果 */
   }
+
+  /* 返回按钮样式 */
+  .back-button {
+    margin-top: 40px;
+    text-align: center; /* 居中对齐 */
+  }
+
+  .back-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button .button:hover {
+    background-color: #555; /* 鼠标悬停时的背景颜色 */
+  }
 </style>
+
