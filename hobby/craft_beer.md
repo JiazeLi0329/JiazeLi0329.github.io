@@ -11,7 +11,7 @@ permalink: /hobby/craft_beer/
 <p>There’s something incredibly satisfying about trying out new brews with friends, comparing tasting notes, and discovering new favorites.</p>
 
 <!-- 添加 Untappd 账号链接 -->
-<p>You can check out my beer reviews and discoveries on my <a href="https://untappd.com/user/your_username" target="_blank">Untappd account</a>.</p>
+<p>You can check out my beer reviews and discoveries on my <a href=["https://untappd.com/user/your_username](https://untappd.com/user/KatoMegumi)" target="_blank">Untappd account</a>.</p>
 
 <!-- 图片布局 -->
 <div class="image-row">
@@ -29,6 +29,15 @@ permalink: /hobby/craft_beer/
   </div>
   <div class="image-column">
     <img src="/hobby_images/craft_beer_4.jpg" alt="Craft Beer 4" />
+  </div>
+</div>
+
+<div class="image-row">
+  <div class="image-column">
+    <img src="/hobby_images/craft_beer_5.jpg" alt="Craft Beer 5" />
+  </div>
+  <div class="image-column">
+    <img src="/hobby_images/craft_beer_6.jpg" alt="Craft Beer 6" />
   </div>
 </div>
 
