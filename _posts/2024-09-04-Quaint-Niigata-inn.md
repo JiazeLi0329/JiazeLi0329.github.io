@@ -11,7 +11,6 @@ I absolutely loved the classic and vintage vibe of the house, along with the del
 
 Some pics:
 
-<!-- 第一排图片并列显示 -->
 <div class="image-row">
   <div class="image-column">
     <img src="/blog_images/240904_1.jpg" alt="1" />
@@ -21,7 +20,6 @@ Some pics:
   </div>
 </div>
 
-<!-- 第二排图片并列显示 -->
 <div class="image-row">
   <div class="image-column">
     <img src="/blog_images/240904_3.jpg" alt="3" />
@@ -33,7 +31,6 @@ Some pics:
 
 Their [Instagram page](https://www.instagram.com/nuttari_nari/).
 
-<!-- 返回键 -->
 <div class="back-button">
   <a href="/blog" class="button">← Back to Blog</a>
 </div>
@@ -42,25 +39,24 @@ Their [Instagram page](https://www.instagram.com/nuttari_nari/).
   .image-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* 增加图片之间的间距 */
+    margin-bottom: 20px;
   }
 
   .image-column {
     flex: 1;
     padding: 10px;
-    max-width: 45%; /* 限制每张图片占据45%的宽度，缩小图片 */
+    max-width: 45%;
   }
 
   .image-column img {
-    width: 100%; /* 图片占满列宽 */
-    height: auto; /* 保持图片的原始宽高比 */
-    border-radius: 8px; /* 圆角效果 */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 
-  /* 返回按钮样式 */
   .back-button {
     margin-top: 40px;
-    text-align: center; /* 居中对齐 */
+    text-align: center;
   }
 
   .back-button .button {
@@ -75,7 +71,7 @@ Their [Instagram page](https://www.instagram.com/nuttari_nari/).
   }
 
   .back-button .button:hover {
-    background-color: #555; /* 鼠标悬停时的背景颜色 */
+    background-color: #555;
   }
 </style>
 
