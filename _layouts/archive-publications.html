@@ -1,63 +1,70 @@
 ---
 layout: default
-title: Publications
+title: Blog
 ---
 
 {% include home-header.html %}
 
+<!-- 博客页面标题 -->
 <h1>{{ page.title }}</h1>
 
-<div class="paper-list">
-  <div class="paper-item">
-    <div class="paper-info">
-      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
-      <strong class="author-name">Jiaze Li</strong>, Zhiling Guo, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
-      <em>International Conference on Applied Energy (ICAE2024)</em>
+<div class="post-list">
+  <!-- 遍历博客文章 -->
+  {% for post in site.posts %}
+  <div class="post-item">
+    <div class="post-info">
+      <strong>{{ post.title }}</strong><br>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><br>
+      <em>{{ post.category }}</em>
     </div>
-    <div class="paper-image">
-      <img src="/ICAE2024.png" alt="ICAE2024" />
-    </div>
-  </div>
-
-  <div class="paper-item">
-    <div class="paper-info">
-      <strong>A High-Precision Method for Photovoltaic Panel Segmentation Combining Large-Scale Model Prior Knowledge and Multimodal Information</strong><br>
-      Lingchengjia Zhou, Kechuan Dong, Hongjun Tan, <strong class="author-name">Jiaze Li</strong>, Qing Yu, Zhiling Guo, Jinyue Yan<br>
-      <em>Applied Energy Symposium and Forum: Low-Carbon Cities and Urban Energy Systems(CUE2024)</em>
-    </div>
-    <div class="paper-image">
-      <img src="/CUE2024.png" alt="CUE2024" />
+    <div class="post-excerpt">
+      <p>{{ post.excerpt | strip_html }}</p>
+      <a href="{{ post.url | relative_url }}">Read More</a>
     </div>
   </div>
-  
-  <!-- Add more papers here as needed -->
+  {% endfor %}
 </div>
 
 <style>
-  .paper-list {
+  .post-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
   
-  .paper-item {
+  .post-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #ddd; /* 添加下划线以区分不同文章 */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   
-  .paper-info {
+  .post-info {
     flex: 1;
-    font-size: 0.8em; /* 调整字体大小为90% */
+    font-size: 0.8em; /* 调整字体大小为80% */
     line-height: 1.5;
     padding-right: 20px;
   }
-  
-  .paper-image img {
-    max-width: 200px; /* 调整图片宽度 */
-    height: auto;
-    border-radius: 8px;
+
+  .post-excerpt {
+    flex: 1;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .post-excerpt a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .post-excerpt a:hover {
+    color: #388E3C;
   }
 
   /* Optional: Adjust the size of the h1 title */
@@ -65,10 +72,6 @@ title: Publications
     font-size: 1.5em;
     margin-bottom: 20px;
   }
-
-  .author-name {
-    text-decoration: underline;
-  }
-  
 </style>
+
 
