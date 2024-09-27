@@ -1,70 +1,62 @@
 ---
 layout: default
-title: Blog
 ---
 
 {% include home-header.html %}
 
-<!-- 博客页面标题 -->
 <h1>{{ page.title }}</h1>
 
-<div class="post-list">
-  <!-- 遍历博客文章 -->
-  {% for post in site.posts %}
-  <div class="post-item">
-    <div class="post-info">
-      <strong>{{ post.title }}</strong><br>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><br>
-      <em>{{ post.category }}</em>
+<div class="paper-list">
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
+      <strong class="author-name">Jiaze Li</strong>, Zhiling Guo, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
+      <em>Published in: Journal of Solar Energy</em>
     </div>
-    <div class="post-excerpt">
-      <p>{{ post.excerpt | strip_html }}</p>
-      <a href="{{ post.url | relative_url }}">Read More</a>
+    <div class="paper-image">
+      <img src="/ICAE2024.png" alt="ICAE2024" />
     </div>
   </div>
-  {% endfor %}
+
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Another Example Paper Title</strong><br>
+      <strong class="author-name">Another Author</strong>, Co-author, etc.<br>
+      <em>Published in: Another Journal</em>
+    </div>
+    <div class="paper-image">
+      <img src="/another_example.png" alt="Another Example Image" />
+    </div>
+  </div>
+  
+  <!-- Add more papers here as needed -->
 </div>
 
 <style>
-  .post-list {
+  .paper-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
   
-  .post-item {
+  .paper-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd; /* 添加下划线以区分不同文章 */
-    padding-bottom: 20px;
-    margin-bottom: 20px;
   }
   
-  .post-info {
+  .paper-info {
     flex: 1;
-    font-size: 0.8em; /* 调整字体大小为80% */
+    font-size: 0.9em; /* 调整字体大小为90% */
     line-height: 1.5;
     padding-right: 20px;
   }
-
-  .post-excerpt {
-    flex: 1;
-    font-size: 0.9em;
-    color: #555;
-  }
-
-  .post-excerpt a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .post-excerpt a:hover {
-    color: #388E3C;
+  
+  .paper-image img {
+    max-width: 200px; /* 调整图片宽度 */
+    height: auto;
+    border-radius: 8px;
   }
 
   /* Optional: Adjust the size of the h1 title */
@@ -72,6 +64,9 @@ title: Blog
     font-size: 1.5em;
     margin-bottom: 20px;
   }
+
+  /* 添加下划线样式 */
+  .author-name {
+    text-decoration: underline;
+  }
 </style>
-
-
