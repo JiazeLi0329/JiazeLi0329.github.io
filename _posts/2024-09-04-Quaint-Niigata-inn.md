@@ -9,9 +9,12 @@ After attending the International Conference on Applied Energy, I had the pleasu
 
 I absolutely loved the classic and vintage vibe of the house, along with the delightful fragrance of the wooden interior that greeted me every time I walked in. The quiet, serene environment and the warmth of the wooden architecture made my stay an unforgettable experience.
 
-If you’re ever in Niigata, I highly recommend staying here. It’s the perfect place to unwind after a long day and soak in the beauty of traditional Japanese living.
+Some pics:
 
-You can check out more details about this lovely stay on their [Instagram page](https://www.instagram.com/nuttari_nari/).
+![1](/blog_images/240904_1.jpg)
 
-I hope you get a chance to experience it for yourself!
+![2](blog_images/240904_2.jpg)
 
+![3](/blog_images/240904_3.jpg)
+
+Their [Instagram page](https://www.instagram.com/nuttari_nari/).
