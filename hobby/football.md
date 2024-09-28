@@ -6,21 +6,19 @@ permalink: /hobby/football/
 
 <h1>Football</h1>
 
-<p>I have always been passionate about football. As a die-hard Barcelona fan, I’ve followed the club through its highs and lows. Messi, being an idol of mine for years, has inspired me with his unmatched skill and dedication. More recently, I’ve been thrilled by the rise of Lamine Yamal, who promises a bright future for the team.</p>
+<p>I have always been passionate about football. As a die-hard Barcelona fan, I’ve followed the club through its highs and lows. More recently, I’ve been thrilled by the rise of Lamine Yamal, who promises a bright future for the team.</p>
 
-<p>Whether it’s watching La Liga games or playing football with friends on the weekends, football is a big part of my life, and it keeps me both entertained and active.</p>
+<p>Whether it’s watching games or playing football with friends on the weekends, football is a big part of my life, and it keeps me both entertained and active.</p>
 
-<!-- 图片布局 -->
 <div class="image-row">
   <div class="image-column">
-    <img src="/hobby_images/football_1.jpg" alt="Barcelona Football" />
+    <img src="/hobby_images/football_1.jpg" alt="Barcelona Football1" />
   </div>
   <div class="image-column">
-    <img src="/hobby_images/football_2.jpg" alt="Messi and Yamal" />
+    <img src="/hobby_images/football_2.jpg" alt="Barcelona Football2" />
   </div>
 </div>
 
-<!-- 返回按钮 -->
 <a href="/hobby">← Back to Hobby</a>
 
 <!-- 自定义样式 -->
@@ -45,24 +43,25 @@ permalink: /hobby/football/
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
   }
 
   p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.4;
     margin-bottom: 20px;
   }
 
   a {
     color: #4CAF50;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   a:hover {
     color: #388E3C;
   }
 </style>
+
