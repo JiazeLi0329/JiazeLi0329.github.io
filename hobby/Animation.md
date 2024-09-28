@@ -45,7 +45,7 @@ permalink: /hobby/animation/
   </div>
 </div>
 
-<!-- 后六张横向图片 -->
+<!-- 后四张横向图片，两张一排布局 -->
 <div class="katou-gallery-bottom">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_4.png" alt="Katou Megumi 4" />
@@ -58,12 +58,6 @@ permalink: /hobby/animation/
   </div>
   <div class="katou-item">
     <img src="/hobby_images/Megumi_7.png" alt="Katou Megumi 7" />
-  </div>
-  <div class="katou-item">
-    <img src="/hobby_images/Megumi_8.jpg" alt="Katou Megumi 8" />
-  </div>
-  <div class="katou-item">
-    <img src="/hobby_images/Megumi_9.jpg" alt="Katou Megumi 9" />
   </div>
 </div>
 
@@ -122,15 +116,15 @@ permalink: /hobby/animation/
     height: 400px; /* 竖向图片高度 */
   }
 
-  /* 后六张横向图片布局 */
+  /* 后四张横向图片，两列布局 */
   .katou-gallery-bottom {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap: 20px;
   }
 
   .katou-gallery-bottom .katou-item img {
-    height: 200px; /* 横向图片高度 */
+    height: 300px; /* 横向图片高度 */
   }
 
   /* 返回 Hobby 按钮样式 */
@@ -156,5 +150,6 @@ permalink: /hobby/animation/
     color: #000;
   }
 </style>
+
 
 
