@@ -45,7 +45,7 @@ permalink: /hobby/animation/
   </div>
 </div>
 
-<!-- 后四张横向图片，两张一排布局 -->
+<!-- 后四张横向图片，两张一排布局，不裁剪原图 -->
 <div class="katou-gallery-bottom">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_4.png" alt="Katou Megumi 4" />
@@ -88,14 +88,13 @@ permalink: /hobby/animation/
 
   .anime-item img, .katou-item img {
     width: 100%;
-    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .anime-item img {
     max-width: 200px;
-    height: 300px; /* Anime 图片尺寸一致 */
+    height: auto; /* 保持图片的原始比例，不裁剪 */
   }
 
   .anime-item p {
@@ -113,7 +112,7 @@ permalink: /hobby/animation/
   }
 
   .katou-gallery-top .katou-item img {
-    height: 400px; /* 竖向图片高度 */
+    height: auto; /* 保持原始比例 */
   }
 
   /* 后四张横向图片，两列布局 */
@@ -124,7 +123,7 @@ permalink: /hobby/animation/
   }
 
   .katou-gallery-bottom .katou-item img {
-    height: 300px; /* 横向图片高度 */
+    height: auto; /* 保持原图比例，不裁剪 */
   }
 
   /* 返回 Hobby 按钮样式 */
