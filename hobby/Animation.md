@@ -12,17 +12,17 @@ permalink: /hobby/animation/
 
 <div class="anime-list">
   <div class="anime-item">
-    <img src="/hobby_images/anime_1.jpg" alt="Your Name" />
+    <img src="/hobby_images/anime_1.jpg" alt="冴えないヒロインの育て方 fine" />
     <p>Your Name</p>
   </div>
 
   <div class="anime-item">
-    <img src="/hobby_images/anime_2.jpg" alt="A Silent Voice" />
+    <img src="/hobby_images/anime_2.jpg" alt="Lupin the 3rd Part IV: The Italian Adventure" />
     <p>A Silent Voice</p>
   </div>
 
   <div class="anime-item">
-    <img src="/hobby_images/anime_3.jpg" alt="Attack on Titan" />
+    <img src="/hobby_images/anime_3.jpg" alt="ブレンド・S" />
     <p>Attack on Titan</p>
   </div>
 
