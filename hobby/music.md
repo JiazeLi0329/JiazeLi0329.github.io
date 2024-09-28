@@ -8,19 +8,16 @@ permalink: /hobby/music/
 
 <p>I have a deep appreciation for a wide range of music genres. Jazz brings a sense of freedom and improvisation, Folk tells stories with simple melodies, Rock energizes me, and Classical music inspires with its rich history and complexity.</p>
 
-<p>An album wall </p>
+<p>Album wall </p>
 
 <div class="album-cover">
   <img src="/hobby_images/music_1.jpg" alt="Favorite Album Cover" />
-  <p>My Favorite Album</p>
 </div>
 
-<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
-<!-- 自定义样式 -->
 <style>
   h1 {
     font-size: 1.5em;
