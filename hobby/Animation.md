@@ -32,46 +32,43 @@ permalink: /hobby/animation/
   </div>
 </div>
 
-<h2>My Favorite Character: 加藤惠</h2>
-<p>One of my all-time favorite anime characters is 加藤惠 from the series “冴えない彼女の育てかた (Saekano: How to Raise a Boring Girlfriend).” Her calm, reserved nature and her unexpected charm make her stand out as one of the best characters in anime for me.</p>
+<h2>My Favorite Character</h2>
+<p>One of my all-time favorite anime characters is 加藤惠(Kato Megumi) from the series “冴えない彼女の育てかた”</p>
 
-<!-- 加藤惠的九张图片展示 -->
 <div class="katou-gallery">
   <div class="katou-item">
-    <img src="/hobby_images/katou_1.jpg" alt="Katou Megumi 1" />
+    <img src="/hobby_images/Megumi_1.jpg" alt="Katou Megumi 1" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_2.jpg" alt="Katou Megumi 2" />
+    <img src="/hobby_images/Megumi_2.jpg" alt="Katou Megumi 2" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_3.jpg" alt="Katou Megumi 3" />
+    <img src="/hobby_images/Megumi_3.jpg" alt="Katou Megumi 3" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_4.jpg" alt="Katou Megumi 4" />
+    <img src="/hobby_images/Megumi_4.jpg" alt="Katou Megumi 4" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_5.jpg" alt="Katou Megumi 5" />
+    <img src="/hobby_images/Megumi_5.jpg" alt="Katou Megumi 5" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_6.jpg" alt="Katou Megumi 6" />
+    <img src="/hobby_images/Megumi_6.jpg" alt="Katou Megumi 6" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_7.jpg" alt="Katou Megumi 7" />
+    <img src="/hobby_images/Megumi_7.jpg" alt="Katou Megumi 7" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_8.jpg" alt="Katou Megumi 8" />
+    <img src="/hobby_images/Megumi_8.jpg" alt="Katou Megumi 8" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/katou_9.jpg" alt="Katou Megumi 9" />
+    <img src="/hobby_images/Megumi_9.jpg" alt="Katou Megumi 9" />
   </div>
 </div>
 
-<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
-<!-- 自定义样式 -->
 <style>
   h1, h2 {
     font-size: 1.5em;
@@ -93,12 +90,11 @@ permalink: /hobby/animation/
     margin-top: 20px;
   }
 
-  /* 保证图片大小一致 */
   .anime-item img, .katou-item img {
     width: 100%;
     max-width: 200px;
-    height: 300px; /* 统一高度 */
-    object-fit: cover; /* 保持图片比例 */
+    height: 300px;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -110,11 +106,10 @@ permalink: /hobby/animation/
   }
 
   .katou-gallery {
-    grid-template-columns: repeat(3, 1fr); /* 加藤惠图片三列布局 */
-    gap: 10px; /* 更小的图片间距 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
-  /* 返回 Hobby 按钮样式 */
   .back-to-hobby {
     text-align: center;
     margin-top: 40px;
