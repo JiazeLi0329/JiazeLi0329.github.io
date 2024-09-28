@@ -6,7 +6,7 @@ permalink: /hobby/animation/
 
 <h1>Animation</h1>
 
-<p>I am an anime enthusiast, enjoying a wide range of genres. Anime brings creativity, emotion, and storytelling that deeply resonates with me. From heartwarming slice-of-life series to action-packed adventures, anime has always been a huge part of my life.</p>
+<p>I am an anime enthusiast, enjoying a wide range of genres. Anime brings creativity, emotion, and storytelling that deeply resonates with me. Anime has always been a part of my life.</p>
 
 <p>Here are some of my favorite anime:</p>
 
