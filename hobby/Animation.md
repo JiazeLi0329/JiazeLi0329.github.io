@@ -35,13 +35,18 @@ permalink: /hobby/animation/
 <h2>My Favorite Character</h2>
 <p>One of my all-time favorite anime characters is 加藤惠(Kato Megumi) from the series “冴えない彼女の育てかた”</p>
 
-<div class="katou-gallery">
+<!-- 前两张竖向图片 -->
+<div class="katou-gallery-top">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_1.jpg" alt="Katou Megumi 1" />
   </div>
   <div class="katou-item">
     <img src="/hobby_images/Megumi_2.jpg" alt="Katou Megumi 2" />
   </div>
+</div>
+
+<!-- 后六张横向图片 -->
+<div class="katou-gallery-bottom">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_4.png" alt="Katou Megumi 4" />
   </div>
@@ -80,7 +85,7 @@ permalink: /hobby/animation/
     margin-bottom: 20px;
   }
 
-  .anime-list, .katou-gallery {
+  .anime-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Anime 两列布局 */
     gap: 20px;
@@ -89,11 +94,14 @@ permalink: /hobby/animation/
 
   .anime-item img, .katou-item img {
     width: 100%;
-    max-width: 200px;
-    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .anime-item img {
+    max-width: 200px;
+    height: 300px; /* Anime 图片尺寸一致 */
   }
 
   .anime-item p {
@@ -102,11 +110,30 @@ permalink: /hobby/animation/
     color: #555;
   }
 
-  .katou-gallery {
-    grid-template-columns: repeat(3, 1fr);
+  /* 前两张竖向图片布局 */
+  .katou-gallery-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .katou-gallery-top .katou-item img {
+    height: 400px; /* 竖向图片高度 */
+  }
+
+  /* 后六张横向图片布局 */
+  .katou-gallery-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
     gap: 10px;
   }
 
+  .katou-gallery-bottom .katou-item img {
+    height: 200px; /* 横向图片高度 */
+  }
+
+  /* 返回 Hobby 按钮样式 */
   .back-to-hobby {
     text-align: center;
     margin-top: 40px;
@@ -129,4 +156,5 @@ permalink: /hobby/animation/
     color: #000;
   }
 </style>
+
 
