@@ -59,12 +59,6 @@ permalink: /hobby/animation/
   <div class="katou-item">
     <img src="/hobby_images/Megumi_7.png" alt="Katou Megumi 7" />
   </div>
-  <div class="katou-item">
-    <img src="/hobby_images/Megumi_6.png" alt="Katou Megumi 8" />
-  </div>
-  <div class="katou-item">
-    <img src="/hobby_images/Megumi_7.png" alt="Katou Megumi 9" />
-  </div>
 </div>
 
 <div class="back-to-hobby">
@@ -85,6 +79,7 @@ permalink: /hobby/animation/
     margin-bottom: 20px;
   }
 
+  /* 动漫列表，统一尺寸 */
   .anime-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Anime 两列布局 */
@@ -92,15 +87,13 @@ permalink: /hobby/animation/
     margin-top: 20px;
   }
 
-  .anime-item img, .katou-item img {
+  .anime-item img {
     width: 100%;
+    max-width: 200px;
+    height: 300px; /* 保持动漫图片相同的尺寸 */
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .anime-item img {
-    max-width: 200px;
-    height: auto; /* 保持图片的原始比例，不裁剪 */
   }
 
   .anime-item p {
@@ -109,27 +102,19 @@ permalink: /hobby/animation/
     color: #555;
   }
 
-  /* 前两张竖向图片布局 */
-  .katou-gallery-top {
+  /* 加藤惠部分：保持原图尺寸 */
+  .katou-gallery-top, .katou-gallery-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 两列布局 */
     gap: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
-  .katou-gallery-top .katou-item img {
-    height: auto; /* 保持原始比例 */
-  }
-
-  /* 后四张横向图片，两列布局 */
-  .katou-gallery-bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
-    gap: 20px;
-  }
-
-  .katou-gallery-bottom .katou-item img {
-    height: auto; /* 保持原图比例，不裁剪 */
+  .katou-item img {
+    width: 100%;
+    height: auto; /* 保持原始比例，不裁剪 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   /* 返回 Hobby 按钮样式 */
