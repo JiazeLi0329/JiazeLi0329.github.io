@@ -36,10 +36,12 @@ permalink: /hobby/craft_beer/
   </div>
 </div>
 
+<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
+<!-- 自定义样式 -->
 <style>
   .image-row {
     display: flex;
@@ -56,14 +58,14 @@ permalink: /hobby/craft_beer/
   .image-column img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* 添加圆角效果 */
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   h1 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   p {
