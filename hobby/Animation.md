@@ -27,7 +27,7 @@ permalink: /hobby/animation/
   </div>
 
   <div class="anime-item">
-    <img src="/hobby_images/anime_4.jpg" alt="My Hero Academia" />
+    <img src="/hobby_images/anime_4.jpg" alt="異世界食堂２" />
     <p>My Hero Academia</p>
   </div>
 </div>
