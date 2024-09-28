@@ -38,8 +38,10 @@ permalink: /hobby/craft_beer/
   </div>
 </div>
 
-<!-- 返回按钮 -->
-<a href="/hobby">← Back to Hobby</a>
+<!-- 返回 Hobby 按钮 -->
+<div class="back-to-hobby">
+  <a href="/hobby" class="button">← Back to Hobby</a>
+</div>
 
 <!-- 自定义样式 -->
 <style>
@@ -74,14 +76,25 @@ permalink: /hobby/craft_beer/
     margin-bottom: 20px;
   }
 
-  a {
-    color: #4CAF50;
-    font-size: 0.9em; /* 将链接的字体大小调小 */
-    text-decoration: none;
+  .back-to-hobby {
+    text-align: center;
+    margin-top: 40px;
   }
 
-  a:hover {
-    color: #388E3C;
+  .back-to-hobby .button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .back-to-hobby .button:hover {
+    background-color: #f0f0f0;
+    color: #000;
   }
 </style>
-
