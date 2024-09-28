@@ -33,9 +33,8 @@ permalink: /hobby/animation/
 </div>
 
 <h2>My Favorite Character</h2>
-<p>One of my all-time favorite anime characters is 加藤惠(Kato Megumi) from the series “冴えない彼女の育てかた”</p>
+<p>One of my all-time favorite anime characters is 加藤惠 from the series “冴えない彼女の育てかた”</p>
 
-<!-- 前两张竖向图片 -->
 <div class="katou-gallery-top">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_1.jpg" alt="Katou Megumi 1" />
@@ -45,7 +44,6 @@ permalink: /hobby/animation/
   </div>
 </div>
 
-<!-- 后四张横向图片，两张一排布局，不裁剪原图 -->
 <div class="katou-gallery-bottom">
   <div class="katou-item">
     <img src="/hobby_images/Megumi_4.png" alt="Katou Megumi 4" />
@@ -58,6 +56,12 @@ permalink: /hobby/animation/
   </div>
   <div class="katou-item">
     <img src="/hobby_images/Megumi_7.png" alt="Katou Megumi 7" />
+  </div>
+  <div class="katou-item">
+    <img src="/hobby_images/Megumi_8.png" alt="Katou Megumi 8" />
+  </div>
+  <div class="katou-item">
+    <img src="/hobby_images/Megumi_9.png" alt="Katou Megumi 9" />
   </div>
 </div>
 
@@ -79,10 +83,9 @@ permalink: /hobby/animation/
     margin-bottom: 20px;
   }
 
-  /* 动漫列表，统一尺寸 */
   .anime-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Anime 两列布局 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
   }
@@ -90,7 +93,7 @@ permalink: /hobby/animation/
   .anime-item img {
     width: 100%;
     max-width: 200px;
-    height: 300px; /* 保持动漫图片相同的尺寸 */
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,22 +105,20 @@ permalink: /hobby/animation/
     color: #555;
   }
 
-  /* 加藤惠部分：保持原图尺寸 */
   .katou-gallery-top, .katou-gallery-bottom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
   }
 
   .katou-item img {
     width: 100%;
-    height: auto; /* 保持原始比例，不裁剪 */
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  /* 返回 Hobby 按钮样式 */
   .back-to-hobby {
     text-align: center;
     margin-top: 40px;
