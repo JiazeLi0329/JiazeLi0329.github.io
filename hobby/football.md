@@ -15,7 +15,7 @@ permalink: /hobby/football/
     <img src="/hobby_images/football_1.jpg" alt="Barcelona Football1" />
   </div>
   <div class="image-column">
-    <img src="/hobby_images/football_2.jpg" alt="Barcelona Football2" />
+    <img src="/hobby_images/football_2.png" alt="Barcelona Football2" />
   </div>
 </div>
 
