@@ -4,7 +4,7 @@ layout: default
 
 {% include home-header.html %}
 
-<!-- 欢迎信息 -->
+<!-- 欢迎信息和个人介绍 -->
 <div class="welcome-section">
   <h1 class="welcome-title">Welcome to My Personal Website</h1>
   <p class="about-description">
@@ -21,30 +21,30 @@ layout: default
 
 <!-- 自定义样式 -->
 <style>
-  /* 欢迎信息样式 - 中心对齐 */
+  /* 欢迎信息容器样式 - 左对齐且居中 */
   .welcome-section {
-    text-align: center; /* 居中对齐 */
-    margin-top: 40px;
-    padding: 20px;
+    max-width: 800px; /* 设置容器最大宽度 */
+    margin: 0 auto; /* 使容器居中 */
+    text-align: left; /* 保持文字左对齐 */
+    padding-top: 50px; /* 添加顶部空白 */
   }
 
   .welcome-title {
     font-weight: bold;
-    font-size: 2.5em; /* 正常大小 */
+    font-size: 2.5em;
     color: #333;
     margin-bottom: 20px;
   }
 
-  /* 自我介绍样式 */
+  /* 自我介绍段落样式 */
   .about-description {
     font-size: 1.2em;
     color: #555;
     line-height: 1.6;
-    max-width: 800px; /* 控制介绍部分的最大宽度 */
-    margin: 0 auto; /* 居中对齐 */
+    margin-bottom: 40px;
   }
 
-  /* 底部导航按钮 - 缩小并排放置 */
+  /* 底部导航按钮样式 - 缩小并排放置 */
   .navigation-section {
     text-align: center;
     margin-top: 50px;
@@ -53,9 +53,9 @@ layout: default
 
   .nav-button {
     display: inline-block;
-    margin: 0 10px; /* 调整按钮间距 */
-    padding: 10px 20px; /* 缩小按钮的内边距 */
-    font-size: 1em; /* 缩小字体 */
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
     text-decoration: none;
     color: #333;
     background-color: #f5f5f5;
