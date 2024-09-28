@@ -15,10 +15,12 @@ permalink: /hobby/music/
   <p>My Favorite Album</p>
 </div>
 
+<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
+<!-- 自定义样式 -->
 <style>
   h1 {
     font-size: 1.5em;
@@ -33,6 +35,7 @@ permalink: /hobby/music/
     margin-bottom: 20px;
   }
 
+  /* 专辑封面样式 */
   .album-cover {
     text-align: center;
     margin-top: 20px;
@@ -51,6 +54,7 @@ permalink: /hobby/music/
     color: #555;
   }
 
+  /* 返回 Hobby 按钮样式 */
   .back-to-hobby {
     text-align: center;
     margin-top: 40px;
@@ -73,3 +77,4 @@ permalink: /hobby/music/
     color: #000;
   }
 </style>
+
