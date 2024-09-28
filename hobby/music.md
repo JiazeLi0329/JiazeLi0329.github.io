@@ -39,7 +39,7 @@ permalink: /hobby/music/
 
   .album-cover img {
     width: 100%;
-    max-width: 200px;
+    max-width: 600px; /* 将专辑封面的最大宽度设置为600px */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
