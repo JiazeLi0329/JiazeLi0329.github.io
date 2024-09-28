@@ -58,10 +58,10 @@ permalink: /hobby/animation/
     <img src="/hobby_images/Megumi_7.png" alt="Katou Megumi 7" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/Megumi_8.png" alt="Katou Megumi 8" />
+    <img src="/hobby_images/Megumi_8.jpg" alt="Katou Megumi 8" />
   </div>
   <div class="katou-item">
-    <img src="/hobby_images/Megumi_9.png" alt="Katou Megumi 9" />
+    <img src="/hobby_images/Megumi_9.jpg" alt="Katou Megumi 9" />
   </div>
 </div>
 
