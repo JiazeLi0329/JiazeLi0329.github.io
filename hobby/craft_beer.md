@@ -10,10 +10,8 @@ permalink: /hobby/craft_beer/
 
 <p>There’s something incredibly satisfying about trying out new brews with friends, comparing tasting notes, and discovering new favorites.</p>
 
-<!-- 添加 Untappd 账号链接 -->
 <p>You can check out my beer reviews and discoveries on my <a href="https://untappd.com/user/KatoMegumi" target="_blank">Untappd account</a>.</p>
 
-<!-- 图片布局 -->
 <div class="image-row">
   <div class="image-column">
     <img src="/hobby_images/craft_beer_1.jpg" alt="Craft Beer 1" />
@@ -38,41 +36,39 @@ permalink: /hobby/craft_beer/
   </div>
 </div>
 
-<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
-<!-- 自定义样式 -->
 <style>
   .image-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* 增加图片之间的间距 */
+    margin-bottom: 20px;
   }
 
   .image-column {
     flex: 1;
     padding: 10px;
-    max-width: 30%; /* 将图片列的宽度限制为 30%，缩小图片 */
+    max-width: 30%;
   }
 
   .image-column img {
-    width: 100%; /* 图片占满列宽 */
+    width: 100%;
     height: auto;
     border-radius: 8px; /* 添加圆角效果 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   h1 {
-    font-size: 1.5em; /* 将字体大小从 2em 调整为 1.5em */
+    font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
   }
 
   p {
-    font-size: 1em; /* 将段落字体大小从 1.2em 调整为 1em */
-    line-height: 1.4; /* 调整行高 */
+    font-size: 1em;
+    line-height: 1.4;
     margin-bottom: 20px;
   }
 
