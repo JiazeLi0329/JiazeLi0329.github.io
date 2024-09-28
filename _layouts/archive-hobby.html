@@ -8,47 +8,39 @@ title: Hobby
 <h1>{{ page.title }}</h1>
 
 <div class="hobby-grid">
-  <!-- 音乐 -->
   <div class="hobby-card">
     <h2><a href="/hobby/music">Music</a></h2>
     <p>I love Jazz, Folk, Rock, and Classical music.</p>
   </div>
 
-  <!-- 精酿啤酒 -->
   <div class="hobby-card">
     <h2><a href="/hobby/craft_beer">Craft Beer</a></h2>
     <p>I’m a serious Hazy IPA fan and love exploring different brews.</p>
   </div>
 
-  <!-- 动画 -->
   <div class="hobby-card">
     <h2><a href="/hobby/animation">Animation</a></h2>
     <p>I enjoy watching slice-of-life anime.</p>
   </div>
 
-  <!-- 足球 -->
   <div class="hobby-card">
     <h2><a href="/hobby/football">Football</a></h2>
     <p>I'm a huge fan of Barcelona.</p>
   </div>
 </div>
 
-<!-- 返回主页按钮 -->
 <div class="back-to-home">
   <a href="/" class="button">← Back to Home</a>
 </div>
 
-<!-- 自定义样式 -->
 <style>
-  /* 让 Hobby 页面的内容左对齐 */
   .hobby-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 设置两列布局 */
-    gap: 20px; /* 设置每个爱好卡片之间的间距 */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
   }
 
-  /* 每个 Hobby 项作为一个矩形卡片 */
   .hobby-card {
     background-color: #f9f9f9;
     padding: 20px;
@@ -64,13 +56,13 @@ title: Hobby
   }
 
   h1 {
-    font-size: 1.5em; /* 调小标题字体大小 */
+    font-size: 1.5em;
     margin-bottom: 20px;
-    text-align: left; /* 标题左对齐 */
+    text-align: left; 
   }
 
   h2 {
-    font-size: 1.2em; /* 调小 h2 字体大小 */
+    font-size: 1.2em;
     margin-bottom: 10px;
   }
 
@@ -81,16 +73,15 @@ title: Hobby
   }
 
   h2 a:hover {
-    color: #00796b; /* 鼠标悬停时文字变色 */
+    color: #00796b;
   }
 
   p {
-    font-size: 0.9em; /* 调小段落字体大小 */
+    font-size: 0.9em;
     line-height: 1.4;
     color: #555;
   }
 
-  /* 返回主页按钮样式 */
   .back-to-home {
     text-align: center;
     margin-top: 40px;
@@ -99,18 +90,18 @@ title: Hobby
 
   .back-to-home .button {
     display: inline-block;
-    padding: 8px 16px; /* 调整按钮的大小 */
-    font-size: 0.9em; /* 调整字体大小 */
+    padding: 8px 16px;
+    font-size: 0.9em;
     color: #333;
-    background-color: transparent; /* 透明背景 */
-    border: 1px solid #333; /* 添加边框 */
+    background-color: transparent;
+    border: 1px solid #333;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .back-to-home .button:hover {
-    background-color: #f0f0f0; /* 鼠标悬停时变成浅灰色 */
+    background-color: #f0f0f0;
     color: #000;
   }
 </style>
