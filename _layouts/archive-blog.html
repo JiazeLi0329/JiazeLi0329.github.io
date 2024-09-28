@@ -27,7 +27,7 @@ title: Blog
 
 <!-- 返回主页按钮 -->
 <div class="back-to-home">
-  <a href="/home.html" class="button">← Back to Home</a>
+  <a href="/" class="button">← Back to Home</a>
 </div>
 
 <style>
@@ -87,16 +87,19 @@ title: Blog
 
   .back-to-home .button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    color: white;
-    background-color: #4CAF50;
+    padding: 8px 16px; /* 调整按钮的大小，变小一点 */
+    font-size: 0.9em; /* 调整字体大小，使其更小 */
+    color: #333;
+    background-color: transparent; /* 按钮变为透明 */
+    border: 1px solid #333; /* 添加边框 */
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .back-to-home .button:hover {
-    background-color: #388E3C;
+    background-color: #f0f0f0; /* 鼠标悬停时变成浅灰色 */
+    color: #000;
   }
 </style>
+
