@@ -32,7 +32,6 @@ permalink: /hobby/music/
     margin-bottom: 20px;
   }
 
-  /* 专辑封面样式 */
   .album-cover {
     text-align: center;
     margin-top: 20px;
@@ -51,7 +50,6 @@ permalink: /hobby/music/
     color: #555;
   }
 
-  /* 返回 Hobby 按钮样式 */
   .back-to-hobby {
     text-align: center;
     margin-top: 40px;
