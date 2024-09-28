@@ -19,12 +19,10 @@ permalink: /hobby/football/
   </div>
 </div>
 
-<!-- 返回 Hobby 按钮 -->
 <div class="back-to-hobby">
   <a href="/hobby" class="button">← Back to Hobby</a>
 </div>
 
-<!-- 自定义样式 -->
 <style>
   .image-row {
     display: flex;
