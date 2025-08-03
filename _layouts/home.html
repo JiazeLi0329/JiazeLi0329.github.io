@@ -18,8 +18,8 @@ layout: default
   <div class="paper-item">
     <div class="paper-info">
       <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
-      <strong class="author-name"><strong class="author-name">Jiaze Li</strong>, Zhiling Guo<span class="advisor">*</span>, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
-      <em>International Conference on Applied Energy (ICAE2024 oral)</em>
+      <span class="paper-meta"><strong class="author-name">Jiaze Li</strong>, Zhiling Guo<span class="advisor">*</span>, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
+      <span class="paper-meta"><em>International Conference on Applied Energy (ICAE2024 oral)</em></span>
     </div>
     <div class="paper-image">
       <img src="/publicatioins_images/ICAE2024.png" alt="ICAE2024" />
@@ -133,7 +133,7 @@ layout: default
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
-    font-weight: normal;
+    font-weight: normal; /* 显式取消加粗 */
   }
 
   .about-description {
@@ -180,7 +180,7 @@ layout: default
     font-size: 1.4em;
     margin-bottom: 24px;
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: none; /* 移除下划线 */
     color: #333;
     font-weight: normal;
   }
@@ -227,13 +227,13 @@ layout: default
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; /* ✅ 保留 */
     padding-bottom: 16px;
   }
 
   .paper-info {
     flex: 1;
-    font-size: 0.75em; /* ⬅️ 更小字体 */
+    font-size: 0.85em;
     line-height: 1.5;
     color: #333;
     font-weight: normal;
