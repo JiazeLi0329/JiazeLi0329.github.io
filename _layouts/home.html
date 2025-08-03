@@ -15,12 +15,34 @@ layout: default
 <div id="publications" class="content-section">
   <h2>Publications</h2>
 
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
+      <strong class="author-name"><strong class="author-name">Jiaze Li</strong>, Zhiling Guo<span class="advisor">*</span>, Huan Zhao, Hongjun Tan, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
+      <em>International Conference on Applied Energy (ICAE2024 oral)</em>
+    </div>
+    <div class="paper-image">
+      <img src="/publicatioins_images/ICAE2024.png" alt="ICAE2024" />
+    </div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>Synthesizing Images with Aligned Masks Using Text-to-Image Based Generative AI for Robust PV Segmentation</strong><br>
+      <strong class="author-name">Hongjun Tan, Zhiling Guo<span class="advisor">*</span>, <strong class="author-name">Jiaze Li</strong>, Yuntian Chen, Qi Chen, Haoran Zhang, Jinyue Yan<span class="advisor">*</span><br>
+      <em>Renewable Energy (Q1) (In submission)</em>
+    </div>
+    <div class="paper-image">
+      <img src="/publicatioins_images/mask.png" alt="mask" />
+    </div>
+  </div>
+
   <div class="paper-list">
     <div class="paper-item">
       <div class="paper-info">
         <strong>Generative Approach for Detecting Small Intrusive Foreign Objects in High-Speed Railway Scenario</strong><br>
         Quan Hao, Rui Shi, <strong class="author-name">Jiaze Li</strong>, Liguo Zhang<span class="advisor">*</span><br>
-        <em>In submission</em>
+        <em>IEEE Transactions on Intelligent Transportation Systems (Q1) (In submission)</em>
       </div>
       <div class="paper-image">
         <img src="/publicatioins_images/T-ITS.png" alt="T-ITS" />
@@ -29,12 +51,12 @@ layout: default
 
     <div class="paper-item">
     <div class="paper-info">
-      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
-      <strong class="author-name">Jiaze Li</strong>, Zhiling Guo, Huan Zhao, Hongjun Tan<span class="advisor">*</span>, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
-      <em>International Conference on Applied Energy (ICAE2024 oral)</em>
+      <strong>Real-Time 3D Human Pose Reconstruction Based on Depth Camera and YOLOv8 Model</strong><br>
+      <strong class="author-name">Heng Deng, <strong class="author-name">Jiaze Li</strong>, Quan Hao, Zhaoyang Cheng, Rui Shi, Liguo Zhang<br>
+      <em>CN Patent</em>
     </div>
     <div class="paper-image">
-      <img src="/publicatioins_images/ICAE2024.png" alt="ICAE2024" />
+      <img src="/publicatioins_images/patent.png" alt="patent" />
     </div>
   </div>
 
@@ -48,42 +70,6 @@ layout: default
       <img src="/publicatioins_images/CUE2024.png" alt="CUE2024" />
     </div>
     
-  </div>
-</div>
-
-
-<div class="paper-list">
-  <div class="paper-item">
-    <div class="paper-info">
-      <strong>Generative Approach for Detecting Small Intrusive Foreign Objects in High-Speed Railway Scenario</strong><br>
-      Quan Hao, Rui Shi, <strong class="author-name">Jiaze Li</strong>, Liguo Zhang<span class="advisor">*</span><br>
-      <em>In submission</em>
-    </div>
-    <div class="paper-image">
-      <img src="/publicatioins_images/T-ITS.png" alt="T-ITS" />
-    </div>
-  </div>
-
-  <div class="paper-item">
-    <div class="paper-info">
-      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
-      <strong class="author-name">Jiaze Li</strong>, Zhiling Guo, Huan Zhao, Hongjun Tan<span class="advisor">*</span>, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
-      <em>International Conference on Applied Energy (ICAE2024 oral)</em>
-    </div>
-    <div class="paper-image">
-      <img src="/publicatioins_images/ICAE2024.png" alt="ICAE2024" />
-    </div>
-  </div>
-
-  <div class="paper-item">
-    <div class="paper-info">
-      <strong>A High-Precision Method for Photovoltaic Panel Segmentation Combining Large-Scale Model Prior Knowledge and Multimodal Information</strong><br>
-      Lingchengjia Zhou, Kechuan Dong, Hongjun Tan<span class="advisor">*</span>, <strong class="author-name">Jiaze Li</strong>, Qing Yu, Zhiling Guo, Jinyue Yan<br>
-      <em>Applied Energy Symposium and Forum: Low-Carbon Cities and Urban Energy Systems (CUE2024 oral)</em>
-    </div>
-    <div class="paper-image">
-      <img src="/publicatioins_images/CUE2024.png" alt="CUE2024" />
-    </div>
   </div>
 </div>
 
@@ -130,6 +116,7 @@ layout: default
   /* 页面基础滚动行为 */
   html {
     scroll-behavior: smooth;
+    font-size: 14px; /* 全局字体缩小，原默认约为 16px */
   }
 
   /* 欢迎区 */
@@ -142,30 +129,30 @@ layout: default
 
   .welcome-title {
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em; /* 原 2.5em */
     color: #333;
     margin-bottom: 20px;
   }
 
   .about-description {
-    font-size: 1.2em;
+    font-size: 1em; /* 原 1.2em */
     color: #555;
     line-height: 1.6;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   /* 顶部导航 */
   .navigation-section {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .nav-button {
     display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 1em;
+    margin: 0 8px;
+    padding: 8px 16px;
+    font-size: 0.9em;
     text-decoration: none;
     color: #333;
     background-color: #f5f5f5;
@@ -182,77 +169,78 @@ layout: default
   /* Section 通用 */
   .content-section {
     max-width: 900px;
-    margin: 100px auto;
-    padding-top: 50px;
+    margin: 80px auto;
+    padding-top: 40px;
     border-top: 1px solid #ccc;
   }
 
   .content-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 30px;
+    font-size: 1.4em; /* 原 1.8em */
+    margin-bottom: 24px;
     border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     color: #333;
+  }
+
+  .content-section h3 {
+    font-size: 1em; /* 原 1.2em */
+    margin-bottom: 8px;
   }
 
   /* Hobby 区域 */
   .hobby-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px 0;
   }
 
   .hobby-card {
     background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: #333;
+    font-size: 0.9em;
   }
 
   .hobby-card:hover {
     background-color: #e0f7fa;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .content-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   }
 
   /* Publications 区域 */
   .paper-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 10px 0;
+    gap: 24px;
+    padding: 8px 0;
   }
 
   .paper-item {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px;
     border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   .paper-info {
     flex: 1;
-    font-size: 0.95em;
-    line-height: 1.6;
+    font-size: 0.85em; /* 更小字体 */
+    line-height: 1.5;
     color: #333;
   }
 
   .paper-image img {
-    width: 150px;
-    max-height: 120px;
+    width: 120px;
+    max-height: 100px;
     object-fit: contain;
-    border-radius: 6px;
-    margin-top: 5px;
+    border-radius: 4px;
+    margin-top: 4px;
   }
 
   .author-name {
@@ -265,36 +253,38 @@ layout: default
     font-weight: bold;
     margin-left: 3px;
   }
-  
+
+  /* Academic Service 区域 */
   .service-list {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 1em;
-  line-height: 1.6;
-  color: #333;
-}
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+  }
 
-.service-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
+  .service-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
-.service-year {
-  font-style: italic;
-  color: #444;
-  min-width: 60px;
-  text-align: right;
-  padding-left: 20px;
-}
+  .service-year {
+    font-style: italic;
+    color: #444;
+    min-width: 60px;
+    text-align: right;
+    padding-left: 20px;
+    font-size: 0.85em;
+  }
 
   /* 可选：提示 advisor 字样 */
-  /* 
+  /*
   .advisor::after {
     content: " (Advisor)";
     font-size: 0.8em;
     color: #999;
-  } 
+  }
   */
 </style>
 
