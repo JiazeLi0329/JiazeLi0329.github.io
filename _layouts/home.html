@@ -133,7 +133,7 @@ layout: default
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
-    font-weight: normal; /* 显式取消加粗 */
+    font-weight: normal;
   }
 
   .about-description {
@@ -180,7 +180,7 @@ layout: default
     font-size: 1.4em;
     margin-bottom: 24px;
     padding-bottom: 0;
-    border-bottom: none; /* 移除下划线 */
+    border-bottom: none;
     color: #333;
     font-weight: normal;
   }
@@ -227,13 +227,13 @@ layout: default
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
-    border-bottom: 1px solid #e0e0e0; /* ✅ 保留 */
+    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 16px;
   }
 
   .paper-info {
     flex: 1;
-    font-size: 0.85em;
+    font-size: 0.75em; /* ⬅️ 更小字体 */
     line-height: 1.5;
     color: #333;
     font-weight: normal;
@@ -283,6 +283,7 @@ layout: default
     font-weight: normal;
   }
 </style>
+
 
 
 
