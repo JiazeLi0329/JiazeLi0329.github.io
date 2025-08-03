@@ -11,11 +11,46 @@ layout: default
   </p>
 </div>
 
-<div class="navigation-section">
-  <a href="#publications" class="nav-button">Publications</a>
-  <a href="#blog" class="nav-button">Blog</a>
-  <a href="#hobby" class="nav-button">Hobby</a>
+<!-- Publications Section -->
+<div id="publications" class="content-section">
+  <h2>Publications</h2>
+
+  <div class="paper-list">
+    <div class="paper-item">
+      <div class="paper-info">
+        <strong>Generative Approach for Detecting Small Intrusive Foreign Objects in High-Speed Railway Scenario</strong><br>
+        Quan Hao, Rui Shi, <strong class="author-name">Jiaze Li</strong>, Liguo Zhang<span class="advisor">*</span><br>
+        <em>In submission</em>
+      </div>
+      <div class="paper-image">
+        <img src="/publicatioins_images/T-ITS.png" alt="T-ITS" />
+      </div>
+    </div>
+
+    <div class="paper-item">
+    <div class="paper-info">
+      <strong>Enhancing Multimodal Meteorological Data Resolution via Diffusion Model for Accurate PV Potential Estimation</strong><br>
+      <strong class="author-name">Jiaze Li</strong>, Zhiling Guo, Huan Zhao, Hongjun Tan<span class="advisor">*</span>, Qing Yu, Rui Zhang, Jian Xu, Jinyue Yan<br>
+      <em>International Conference on Applied Energy (ICAE2024 oral)</em>
+    </div>
+    <div class="paper-image">
+      <img src="/publicatioins_images/ICAE2024.png" alt="ICAE2024" />
+    </div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-info">
+      <strong>A High-Precision Method for Photovoltaic Panel Segmentation Combining Large-Scale Model Prior Knowledge and Multimodal Information</strong><br>
+      Lingchengjia Zhou, Kechuan Dong, Hongjun Tan<span class="advisor">*</span>, <strong class="author-name">Jiaze Li</strong>, Qing Yu, Zhiling Guo, Jinyue Yan<br>
+      <em>Applied Energy Symposium and Forum: Low-Carbon Cities and Urban Energy Systems (CUE2024 oral)</em>
+    </div>
+    <div class="paper-image">
+      <img src="/publicatioins_images/CUE2024.png" alt="CUE2024" />
+    </div>
+    
+  </div>
 </div>
+
 
 <div class="paper-list">
   <div class="paper-item">
@@ -50,6 +85,17 @@ layout: default
       <img src="/publicatioins_images/CUE2024.png" alt="CUE2024" />
     </div>
   </div>
+</div>
+
+<!-- Academic Service Section -->
+<div id="service" class="content-section">
+  <h2>Academic Service</h2>
+  <ul class="service-list">
+    <li>
+      Reviewer for <em>IEEE Transactions on Intelligent Transportation Systems</em>
+      <span class="service-year">2025</span>
+    </li>
+  </ul>
 </div>
 
 
@@ -219,6 +265,28 @@ layout: default
     font-weight: bold;
     margin-left: 3px;
   }
+  
+  .service-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.service-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.service-year {
+  font-style: italic;
+  color: #444;
+  min-width: 60px;
+  text-align: right;
+  padding-left: 20px;
+}
 
   /* 可选：提示 advisor 字样 */
   /* 
