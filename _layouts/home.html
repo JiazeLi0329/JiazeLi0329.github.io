@@ -118,6 +118,10 @@ layout: default
     font-size: 14px;
   }
 
+  body {
+    font-weight: normal;
+  }
+
   .welcome-section {
     max-width: 800px;
     margin: 0 auto;
@@ -129,6 +133,7 @@ layout: default
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
+    font-weight: normal; /* 显式取消加粗 */
   }
 
   .about-description {
@@ -136,6 +141,7 @@ layout: default
     color: #555;
     line-height: 1.6;
     margin-bottom: 60px;
+    font-weight: normal;
   }
 
   .navigation-section {
@@ -155,6 +161,7 @@ layout: default
     border: 2px solid #ddd;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: normal;
   }
 
   .nav-button:hover {
@@ -166,20 +173,22 @@ layout: default
     max-width: 900px;
     margin: 80px auto;
     padding-top: 40px;
-    border-top: 1px solid #ccc;
+    border-top: none;
   }
 
   .content-section h2 {
     font-size: 1.4em;
     margin-bottom: 24px;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 4px;
+    padding-bottom: 0;
+    border-bottom: none; /* 移除下划线 */
     color: #333;
+    font-weight: normal;
   }
 
   .content-section h3 {
     font-size: 1em;
     margin-bottom: 8px;
+    font-weight: normal;
   }
 
   .hobby-grid {
@@ -198,6 +207,7 @@ layout: default
     text-decoration: none;
     color: #333;
     font-size: 0.9em;
+    font-weight: normal;
   }
 
   .hobby-card:hover {
@@ -217,7 +227,7 @@ layout: default
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; /* ✅ 保留 */
     padding-bottom: 16px;
   }
 
@@ -226,6 +236,7 @@ layout: default
     font-size: 0.85em;
     line-height: 1.5;
     color: #333;
+    font-weight: normal;
   }
 
   .paper-image img {
@@ -237,12 +248,14 @@ layout: default
   }
 
   .author-name {
-    /* 已移除 font-weight 和 underline */
+    font-weight: normal;
+    text-decoration: none;
   }
 
   .advisor {
     color: #d9534f;
     margin-left: 3px;
+    font-weight: normal;
   }
 
   .service-list {
@@ -251,6 +264,7 @@ layout: default
     font-size: 0.9em;
     line-height: 1.5;
     color: #333;
+    font-weight: normal;
   }
 
   .service-list li {
@@ -266,7 +280,9 @@ layout: default
     text-align: right;
     padding-left: 20px;
     font-size: 0.85em;
+    font-weight: normal;
   }
 </style>
+
 
 
