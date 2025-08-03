@@ -1,9 +1,12 @@
 - type: publications
   title: Publications
-  url: /publications/
+  anchor: publications
+
 - type: blog
   title: Blog
-  url: /blog/
+  anchor: blog
+
 - type: hobby
   title: Hobby
-  url: /hobby/
+  anchor: hobby
+
