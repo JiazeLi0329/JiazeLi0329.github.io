@@ -113,13 +113,11 @@ layout: default
 </div>
 
 <style>
-  /* 页面基础滚动行为 */
   html {
     scroll-behavior: smooth;
-    font-size: 14px; /* 全局字体缩小，原默认约为 16px */
+    font-size: 14px;
   }
 
-  /* 欢迎区 */
   .welcome-section {
     max-width: 800px;
     margin: 0 auto;
@@ -128,20 +126,18 @@ layout: default
   }
 
   .welcome-title {
-    font-weight: bold;
-    font-size: 2em; /* 原 2.5em */
+    font-size: 2em;
     color: #333;
     margin-bottom: 20px;
   }
 
   .about-description {
-    font-size: 1em; /* 原 1.2em */
+    font-size: 1em;
     color: #555;
     line-height: 1.6;
     margin-bottom: 60px;
   }
 
-  /* 顶部导航 */
   .navigation-section {
     text-align: center;
     margin-top: 40px;
@@ -166,7 +162,6 @@ layout: default
     color: #333;
   }
 
-  /* Section 通用 */
   .content-section {
     max-width: 900px;
     margin: 80px auto;
@@ -175,7 +170,7 @@ layout: default
   }
 
   .content-section h2 {
-    font-size: 1.4em; /* 原 1.8em */
+    font-size: 1.4em;
     margin-bottom: 24px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 4px;
@@ -183,11 +178,10 @@ layout: default
   }
 
   .content-section h3 {
-    font-size: 1em; /* 原 1.2em */
+    font-size: 1em;
     margin-bottom: 8px;
   }
 
-  /* Hobby 区域 */
   .hobby-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -211,7 +205,6 @@ layout: default
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   }
 
-  /* Publications 区域 */
   .paper-list {
     display: flex;
     flex-direction: column;
@@ -230,7 +223,7 @@ layout: default
 
   .paper-info {
     flex: 1;
-    font-size: 0.85em; /* 更小字体 */
+    font-size: 0.85em;
     line-height: 1.5;
     color: #333;
   }
@@ -244,17 +237,14 @@ layout: default
   }
 
   .author-name {
-    text-decoration: underline;
-    font-weight: bold;
+    /* 已移除 font-weight 和 underline */
   }
 
   .advisor {
     color: #d9534f;
-    font-weight: bold;
     margin-left: 3px;
   }
 
-  /* Academic Service 区域 */
   .service-list {
     list-style-type: disc;
     padding-left: 20px;
@@ -277,14 +267,6 @@ layout: default
     padding-left: 20px;
     font-size: 0.85em;
   }
-
-  /* 可选：提示 advisor 字样 */
-  /*
-  .advisor::after {
-    content: " (Advisor)";
-    font-size: 0.8em;
-    color: #999;
-  }
-  */
 </style>
+
 
