@@ -10,3 +10,6 @@
   title: Hobby
   anchor: hobby
 
+- type: service
+  title: Academic Service
+  anchor: service
