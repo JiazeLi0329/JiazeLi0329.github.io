@@ -14,10 +14,10 @@
   title: Academic Service
   anchor: service
 
-- type: hobby
-  title: Hobby
-  anchor: hobby
-
 - type: awards
   title: Awards
   anchor: awards
+  
+- type: hobby
+  title: Hobby
+  anchor: hobby
