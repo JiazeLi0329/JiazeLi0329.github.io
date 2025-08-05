@@ -43,5 +43,27 @@
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}
     {%- endif -%}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // 头部高度（如果头部是吸顶/固定，需要减去它的高度，避免遮挡标题）
+        var header = document.querySelector('.home-header');
+        var offset = header ? header.offsetHeight : 0;
+    
+        // 拦截页内导航点击：地址不变，只滚动
+        document.querySelectorAll('a.nav-inpage[data-target]').forEach(function (a) {
+          a.addEventListener('click', function (e) {
+            e.preventDefault(); // 阻止默认跳转（不会出现 #xxx）
+            var id = a.getAttribute('data-target');
+            var el = document.getElementById(id);
+            if (!el) return;
+    
+            var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>
