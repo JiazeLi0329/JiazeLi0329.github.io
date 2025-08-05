@@ -2,7 +2,7 @@
   {{ content }}
 </main>
 
-<footer class="footer">
+<!-- <footer class="footer">
   {%- assign year_from = '2024' -%}
   {%- assign year_to = site.time | date: '%Y' -%}
   {%- if year_from == year_to -%}
@@ -12,5 +12,16 @@
   {%- endif -%}
   <small>
     &copy; {{ year_string }} {% if site.author %}<a href="{{ site.author.url }}">{{ site.author.name }}</a>{% endif %}. All rights reserved.
+  </small>
+</footer>
+ -->
+
+<main>
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <small>
+    &copy; {% if site.author %}<a href="{{ site.author.url }}">{{ site.author.name }}</a>{% endif %}. All rights reserved.
   </small>
 </footer>
