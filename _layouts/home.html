@@ -135,22 +135,22 @@ layout: default
 <div id="awards" class="content-section">
   <h2>Awards</h2>
 
-  <ul class="service-list" style="list-style-type: disc; padding-left: 20px;">
+  <ul class="awards-list">
     <li>
-      <span><strong>Outstanding Student Program</strong>, Beijing University of Technology</span>
-      <span class="service-year">2025</span>
+      <span class="award-name"><strong>Outstanding Student Program</strong>, Beijing University of Technology</span>
+      <span class="award-year">2025</span>
     </li>
     <li>
-      <span><strong>Innovation and Entrepreneurship Award</strong>, Beijing University of Technology</span>
-      <span class="service-year">2024</span>
+      <span class="award-name"><strong>Innovation and Entrepreneurship Award</strong>, Beijing University of Technology</span>
+      <span class="award-year">2024</span>
     </li>
     <li>
-      <span><strong>Second Prize</strong>, "Internet+" Innovation and Entrepreneurship Competition</span>
-      <span class="service-year">2024</span>
+      <span class="award-name"><strong>Second Prize</strong>, "Internet+" Innovation and Entrepreneurship Competition</span>
+      <span class="award-year">2024</span>
     </li>
     <li>
-      <span><strong>Academic Excellence Award</strong>, Beijing-Dublin International College</span>
-      <span class="service-year">2022, 2023</span>
+      <span class="award-name"><strong>Academic Excellence Award</strong>, Beijing-Dublin International College</span>
+      <span class="award-year">2022, 2023</span>
     </li>
   </ul>
 </div>
@@ -431,6 +431,31 @@ layout: default
   color: #666;
 }
 
+.awards-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.95em;
+    color: #333;
+  }
 
+  .awards-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-right: 120px;
+  }
+
+  .award-name {
+    display: inline-block;
+    font-weight: normal;
+  }
+
+  .award-year {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: italic;
+    color: #666;
+    font-size: 0.85em;
+  }
 
 </style>
