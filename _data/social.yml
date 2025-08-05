@@ -7,3 +7,6 @@
 - title: GitHub
   url: https://github.com/Jiazeli0329
   icon: fab fa-github
+- title: CV
+  url: /cv.pdf
+  icon: "CV"
