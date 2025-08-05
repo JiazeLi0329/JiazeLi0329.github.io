@@ -3,7 +3,7 @@
   anchor: education
 
 - type: experience
-  title: Research Experience
+  title: Work Experience
   anchor: experience
   
 - type: publications
@@ -17,3 +17,7 @@
 - type: hobby
   title: Hobby
   anchor: hobby
+
+- type: awards
+  title: Awards
+  anchor: awards
