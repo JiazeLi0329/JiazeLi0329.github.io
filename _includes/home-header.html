@@ -4,10 +4,7 @@
     <ul class="home-header-menu pure-menu-list">
       {% for item in site.data.archive %}
         <li class="pure-menu-item">
-          # 新地址索引
-          # <a href="#{{ item.anchor }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}">{{ item.title }}</a>
-
-          # 同一地址下索引
+<!--           <a href="#{{ item.anchor }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}">{{ item.title }}</a> -->
           <a href="javascript:void(0)"
              class="pure-menu-link nav-inpage"
              data-target="{{ item.anchor }}"
