@@ -3,11 +3,7 @@
 
   {% include head.html %}
 
-
-
   <body>
-<!--     {% include home-header.html %} -->
-
     <div class="container pure-g">
       {%- assign cover_bg_color = site.cover_bg_color | default: "rgb(40, 73, 77)" -%}
       {%- assign cover_color    = site.cover_color    | default: "rgb(255, 255, 255)" -%}
@@ -44,6 +40,23 @@
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}
     {%- endif -%}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('a.nav-inpage[data-target]').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            e.preventDefault(); // 阻止默认锚点行为 → 地址不变
+            var id = this.getAttribute('data-target');
+            var el = document.getElementById(id);
+            if (!el) return;
+    
+            // 如果需要考虑固定头部高度，可加 offset 逻辑；否则直接平滑滚动
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+      });
+    </script>
+
 
   </body>
 </html>
