@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   function strip(str, remove) {
     while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
       str = str.substr(1);
@@ -37,4 +37,80 @@
       });
     }
   }
+</script> -->
+
+<!-- back-to-top button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<style>
+  .back-to-top{
+    position: fixed;
+    right: max(20px, env(safe-area-inset-right));
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: #1f6feb;           /* 按需改色 */
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    cursor: pointer;
+    z-index: 1100;
+
+    /* 初始隐藏 + 动画 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+  }
+  .back-to-top.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .back-to-top:focus{
+    outline: 2px solid rgba(31,111,235,.35);
+    outline-offset: 2px;
+  }
+
+  /* 根据系统设置减少动效（可选） */
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    .back-to-top{ transition: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    var btn, ticking = false;
+    var showAt = 200; // 滚动超过多少像素显示按钮
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        if (window.scrollY > showAt) btn.classList.add('show');
+        else btn.classList.remove('show');
+        ticking = false;
+      });
+    }
+
+    function onClick() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      btn = document.getElementById('backToTop');
+      if (!btn) return;
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      btn.addEventListener('click', onClick);
+      onScroll(); // 初始化一次
+    });
+  })();
 </script>
+
