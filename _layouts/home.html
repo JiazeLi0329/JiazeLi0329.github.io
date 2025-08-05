@@ -458,4 +458,24 @@ layout: default
     font-size: 0.85em;
   }
 
+  /* 顶部导航粘性吸顶 */
+  .home-header {
+    position: sticky;   /* 关键 */
+    top: 0;             /* 贴顶部 */
+    z-index: 1000;      /* 盖住内容 */
+    background: #fff;   /* 遮住下面内容 */
+  }
+  
+  /* 你的导航容器可按需微调 */
+  .home-header-bar {
+    border-bottom: 1px solid #eaeaea;      /* 下划线 */
+    box-shadow: 0 2px 12px rgba(0,0,0,.06);/* 阴影可选 */
+  }
+  
+  /* 让锚点滚动时不被 header 遮住（如果以后恢复 #hash 跳转也有效） */
+  .content-section { 
+    scroll-margin-top: 72px;  /* 72px 按 header 实际高度调整 */
+  }
+
+
 </style>
