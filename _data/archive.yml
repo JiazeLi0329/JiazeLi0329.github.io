@@ -1,15 +1,19 @@
+- type: education
+  title: Education
+  anchor: education
+
+- type: experience
+  title: Research Experience
+  anchor: experience
+  
 - type: publications
   title: Publications
   anchor: publications
 
-- type: blog
-  title: Blog
-  anchor: blog
+- type: service
+  title: Academic Service
+  anchor: service
 
 - type: hobby
   title: Hobby
   anchor: hobby
-
-- type: service
-  title: Academic Service
-  anchor: service
