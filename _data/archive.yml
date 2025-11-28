@@ -18,6 +18,6 @@
   title: Awards
   anchor: awards
   
-- type: hobby
-  title: Hobby
-  anchor: hobby
+- type: skills
+  title: Technical Skills
+  anchor: skills
