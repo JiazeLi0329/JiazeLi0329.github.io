@@ -14,10 +14,10 @@
   title: Service
   anchor: service
 
-- type: awards
-  title: Awards
-  anchor: awards
-  
 - type: skills
   title: Technical Skills
   anchor: skills
+
+- type: awards
+  title: Awards
+  anchor: awards
