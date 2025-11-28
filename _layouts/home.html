@@ -269,44 +269,6 @@ layout: default
     font-size: 1em; 
   }
 
-  /* Publications Styles
-  .paper-item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    border-bottom: 1px solid #e0e0e0;
-    gap: 16px;
-    padding-bottom: 16px;
-    margin-bottom: 24px;
-  }
-
-  .paper-info {
-    flex: 1;
-    font-size: 0.85em;
-    line-height: 1.6;
-    color: #333;
-    font-weight: normal;
-  }
-
-  .paper-image img {
-    width: 120px;
-    max-height: 100px;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-top: 4px;
-  }
-
-  .author-name {
-    font-weight: bold; 
-    text-decoration: none;
-  }
-
-  .advisor {
-    color: #d9534f;
-    margin-left: 3px;
-    font-weight: normal;
-  } */
-
   /* --- Publications Styles --- */
   .paper-item {
     display: flex;
@@ -326,27 +288,24 @@ layout: default
     font-weight: normal;
   }
 
-  /* 图片容器 */
   .paper-image {
     position: relative;
     z-index: 1;
   }
 
-  /* 列表中的小图样式 */
   .paper-image img {
     width: 120px;
     max-height: 100px;
     object-fit: contain;
     border-radius: 4px;
     margin-top: 4px;
-    cursor: zoom-in; /* 鼠标指针变成放大镜 */
+    cursor: zoom-in;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #fff;
   }
 
-  /* 鼠标悬停在小图上：略微放大 */
   .paper-image img:hover {
-    transform: scale(1.15); /* 放大 1.15 倍，太大会遮挡文字，这个比例比较舒服 */
+    transform: scale(1.15);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 10;
     position: relative;
@@ -363,7 +322,6 @@ layout: default
     font-weight: normal;
   }
 
-  /* --- 模态框 (Lightbox) 样式 --- */
   .modal {
     display: none; /* 默认隐藏 */
     position: fixed; 
@@ -378,27 +336,24 @@ layout: default
     backdrop-filter: blur(8px); /* 关键：背景高斯模糊 */
   }
 
-  /* 模态框里的图片 */
   .modal-content {
     margin: auto;
     display: block;
     width: auto;
     height: auto;
-    max-width: 90%; /* 限制最大宽度 */
-    max-height: 90%; /* 限制最大高度，防止超出一屏 */
+    max-width: 70%; /* 限制最大宽度 */
+    max-height: 70%; /* 限制最大高度，防止超出一屏 */
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     animation-name: zoom;
     animation-duration: 0.3s;
   }
 
-  /* 图片弹出的动画 */
   @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
   }
 
-  /* 关闭按钮 (×) */
   .close-btn {
     position: absolute;
     top: 20px;
@@ -418,7 +373,6 @@ layout: default
     cursor: pointer;
   }
   
-  /* 移动端适配：关闭按钮位置调整 */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
@@ -499,16 +453,12 @@ layout: default
 
 
 <script>
-  // 获取模态框
   var modal = document.getElementById("imageModal");
   
-  // 获取模态框里的图片元素
   var modalImg = document.getElementById("img01");
   
-  // 获取所有 class 为 paper-image 下的 img 元素
   var images = document.querySelectorAll(".paper-image img");
   
-  // 为每张图片添加点击事件
   images.forEach(function(img) {
     img.onclick = function(){
       modal.style.display = "block"; // 显示模态框
@@ -516,15 +466,12 @@ layout: default
     }
   });
   
-  // 获取关闭按钮
   var span = document.getElementsByClassName("close-btn")[0];
   
-  // 点击 × 关闭
   span.onclick = function() { 
     modal.style.display = "none";
   }
   
-  // 点击背景也可以关闭（用户体验更好）
   modal.onclick = function(event) {
     if (event.target === modal) {
       modal.style.display = "none";
