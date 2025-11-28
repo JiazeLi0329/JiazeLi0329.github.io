@@ -75,7 +75,8 @@ layout: default
       <a href="/pdfs/ICAE_Super_Resolution_2024.pdf" target="_blank">[Paper]</a>
     </div>
     <div class="paper-image">
-      <img src="/publications_images/ICAE2024.png" alt="ICAE2024" />
+      <!-- <img src="/publications_images/ICAE2024.png" alt="ICAE2024" /> -->
+      <a href="/publications_images/ICAE2024.png" target="_blank" class="image-link"> <img src="/publications_images/ICAE2024.png" alt="ICAE2024" /> </a>
     </div>
   </div>
 
@@ -191,8 +192,6 @@ layout: default
     font-weight: normal;
   }
 
-  /* --- 统一链接样式 (核心修改部分) --- */
-  /* 针对自我介绍、经历、论文列表中的所有链接统一设置 */
   .about-description a,
   .experience-entry a,
   .paper-info a {
@@ -265,52 +264,8 @@ layout: default
     font-size: 1em; 
   }
 
-  /* Publications Styles */
-  /* --- Publications Styles (图文上下结构，宽度对齐) --- */
+  /* /* Publications Styles */
   .paper-item {
-    display: flex;
-    flex-direction: column; /* 纵向排列 */
-    align-items: flex-start;
-    border-bottom: 1px solid #e0e0e0;
-    gap: 16px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-  }
-
-  .paper-info {
-    width: 100%;       /* 文字区域占满宽度 */
-    font-size: 0.85em;
-    line-height: 1.6;
-    color: #333;
-    font-weight: normal;
-  }
-
-  /* 图片容器 */
-  .paper-image {
-    width: 100%;       /* 容器占满宽度 */
-    margin-top: 10px;  
-  }
-
-  /* 图片本身 */
-  .paper-image img {
-    width: 100%;          /* 关键修改：强制宽度 100%，与文字宽度完全一致 */
-    height: auto;         /* 高度自动，防止变形 */
-    border-radius: 6px;   /* 圆角 */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* 阴影 */
-    display: block;       /* 消除底部空隙 */
-  }
-
-  .author-name {
-    font-weight: bold; 
-    text-decoration: none;
-  }
-
-  .advisor {
-    color: #d9534f;
-    margin-left: 3px;
-    font-weight: normal;
-  }
-  /* .paper-item {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -346,6 +301,65 @@ layout: default
     margin-left: 3px;
     font-weight: normal;
   } */
+
+  /* Publications Styles */
+  .paper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+
+  .paper-info {
+    flex: 1;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  /* 图片容器 */
+  .paper-image {
+    /* 确保图片层级较高，放大时盖住文字而不是被文字盖住 */
+    position: relative; 
+    z-index: 1; 
+  }
+
+  /* 图片本身的样式 */
+  .paper-image img {
+    width: 120px;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-top: 4px;
+    
+    /* --- 新增：平滑过渡效果 --- */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: zoom-in; /* 鼠标移上去变成“放大镜”图标，提示可点击 */
+    background-color: #fff; /* 防止透明背景图片放大时字透过来 */
+  }
+
+  /* --- 新增：鼠标悬停时的放大效果 --- */
+  .paper-image img:hover {
+    transform: scale(1.8); /* 放大 1.8 倍 (根据需要调整这个数字) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* 添加阴影，增加立体感 */
+    z-index: 100; /* 确保放大后在最上层 */
+    position: relative;
+  }
+
+  .author-name {
+    font-weight: bold; 
+    text-decoration: none;
+  }
+
+  .advisor {
+    color: #d9534f;
+    margin-left: 3px;
+    font-weight: normal;
+  }
 
   /* Service Styles */
   .service-list {
