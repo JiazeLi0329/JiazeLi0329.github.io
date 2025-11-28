@@ -10,7 +10,7 @@ layout: default
   <p class="about-description">
     Hi, I'm Jiaze Li. I am currently pursuing a dual bachelor's degree in Electronic Information Engineering with <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a> and <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
     <br><br>
-    My research interests include <strong>computer vision</strong> and <strong>generative artificial intelligence</strong>. Specifically, I focus on controllable image synthesis via latent diffusion models, event-based vision, and 3D vision for novel view synthesis. I am committed to advancing visual perception and generation methodologies, while also applying them to specific downstream tasks such as remote sensing and intelligent transportation systems.   </p>
+    My research interests include <strong>computer vision</strong> and <strong>generative artificial intelligence</strong>. Specifically, I focus on controllable image synthesis via latent diffusion models, event-based vision, and 3D vision for novel view synthesis. I am committed to advancing visual perception and generation methodologies, while also applying them to some downstream tasks such as remote sensing and intelligent transportation systems.   </p>
 </div>
 
 <!-- Education Section -->
@@ -175,7 +175,200 @@ layout: default
     </li>
   </ul>
 </div>
+
+
 <style>
+  html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+  }
+
+  body {
+    font-weight: normal;
+  }
+
+  /* --- 统一链接样式 (核心修改部分) --- */
+  /* 针对自我介绍、经历、论文列表中的所有链接统一设置 */
+  .about-description a,
+  .experience-entry a,
+  .paper-info a {
+    color: #0066cc;       /* 统一为深蓝色 */
+    text-decoration: none; /* 默认：去掉下划线 */
+    font-weight: normal;  /* 保持字重正常 */
+    transition: color 0.2s ease; /* 增加一点颜色渐变的平滑效果 */
+  }
+
+  /* 鼠标悬停时的效果 */
+  .about-description a:hover,
+  .experience-entry a:hover,
+  .paper-info a:hover {
+    text-decoration: underline; /* 悬停时：显示下划线 */
+    color: #004499;             /* 悬停时：颜色稍微加深 */
+  }
+  /* ---------------------------------- */
+
+  .welcome-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 50px;
+  }
+
+  .welcome-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal; 
+  }
+
+  .about-description {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    font-weight: normal;
+  }
+
+  .content-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding-top: 40px;
+    border-top: none;
+  }
+
+  .content-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: #333;
+    font-weight: normal;
+  }
+
+  /* Education & Experience Shared Styles */
+  .education-entry, 
+  .experience-entry {
+    margin-bottom: 24px;
+    font-size: 0.85em; 
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .time-range {
+    float: right;
+    font-style: italic;
+    color: #666;
+    font-size: 1em; 
+  }
+
+  /* Publications Styles */
+  .paper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+
+  .paper-info {
+    flex: 1;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .paper-image img {
+    width: 120px;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+  .author-name {
+    font-weight: bold; 
+    text-decoration: none;
+  }
+
+  .advisor {
+    color: #d9534f;
+    margin-left: 3px;
+    font-weight: normal;
+  }
+
+  /* Service Styles */
+  .service-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em; 
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .service-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+   
+  .service-year {
+    font-style: italic;
+    color: #444;
+    min-width: 60px;
+    text-align: right;
+    padding-left: 20px;
+  }
+
+  /* Skills Styles */
+  .skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em; 
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .skills-list li {
+    margin-bottom: 8px;
+  }
+
+  /* Awards Styles */
+  .awards-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em;
+    line-height: 1.6; 
+    color: #333;
+  }
+
+  .awards-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-right: 120px;
+  }
+
+  .award-name {
+    display: inline-block;
+    font-weight: normal;
+  }
+
+  .award-year {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: italic;
+    color: #666;
+  }
+</style>
+
+
+<!-- <style>
   html {
     scroll-behavior: smooth;
     font-size: 14px;
@@ -352,4 +545,4 @@ layout: default
     font-style: italic;
     color: #666;
   }
-</style>
+</style> -->
