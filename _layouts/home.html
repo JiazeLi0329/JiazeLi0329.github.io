@@ -323,21 +323,21 @@ layout: default
   }
 
   .modal {
-    display: none; /* 默认隐藏 */
-    position: fixed; 
-    z-index: 9999; /* 保证在最上层 */
-    padding-top: 50px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.8); /* 黑色半透明背景 */
-    backdrop-filter: blur(8px); /* 关键：背景高斯模糊 */
-  }
+  display: none; /* 默认隐藏 */
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px); 
+  justify-content: center;
+  align-items: center;
+}
 
   .modal-content {
-    margin: auto;
     display: block;
     width: auto;
     height: auto;
@@ -348,6 +348,9 @@ layout: default
     animation-name: zoom;
     animation-duration: 0.3s;
   }
+
+
+
 
   @keyframes zoom {
     from {transform:scale(0)} 
@@ -459,10 +462,20 @@ layout: default
   
   var images = document.querySelectorAll(".paper-image img");
   
+  // images.forEach(function(img) {
+  //   img.onclick = function(){
+  //     modal.style.display = "block"; // 显示模态框
+  //     modalImg.src = this.src;       // 将模态框图片的 src 设置为被点击图片的 src
+  //   }
+  // });
+  // 为每张图片添加点击事件
   images.forEach(function(img) {
     img.onclick = function(){
-      modal.style.display = "block"; // 显示模态框
-      modalImg.src = this.src;       // 将模态框图片的 src 设置为被点击图片的 src
+      
+      // --- 关键修改：这里改为 flex ---
+      modal.style.display = "flex"; 
+      
+      modalImg.src = this.src;      
     }
   });
   
