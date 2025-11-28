@@ -4,12 +4,13 @@ layout: default
 
 {% include home-header.html %}
 
+<!-- University College Dublin and Beijing University of Technology -->
 <div class="welcome-section">
   <h1 class="welcome-title">Welcome to My Personal Website!</h1>
   <p class="about-description">
-    Hi, I'm Jiaze Li. I am currently pursuing the dual bachelor's degree in Electronic Information Engineering with University College Dublin and Beijing University of Technology.
+    Hi, I'm Jiaze Li. I am currently pursuing a dual bachelor's degree in Electronic Information Engineering with <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a> and <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
     <br><br>
-    My research interests include computer vision and generative artificial intelligence. Specifically, I focus on controllable image synthesis via latent diffusion models, event-based vision, and 3D vision for novel view synthesis. I am committed to advancing visual perception and generation methodologies, while also applying them to specific downstream tasks such as remote sensing and intelligent transportation systems.   </p>
+    My research interests include <strong>computer vision</strong> and <strong>generative artificial intelligence</strong>. Specifically, I focus on controllable image synthesis via latent diffusion models, event-based vision, and 3D vision for novel view synthesis. I am committed to advancing visual perception and generation methodologies, while also applying them to specific downstream tasks such as remote sensing and intelligent transportation systems.   </p>
 </div>
 
 <!-- Education Section -->
@@ -140,7 +141,7 @@ layout: default
 </div>
 
 <div id="skills" class="content-section">
-  <h2>Technical Skills</h2>
+  <h2>Skills</h2>
   <ul class="skills-list">
     <li><strong>Languages:</strong> Chinese (native), English (TOEFL iBT 101/120), Japanese (JLPT N2)</li>
     <li><strong>Programming:</strong> Python, C, Java, Bash</li>
@@ -328,7 +329,7 @@ layout: default
   .awards-list {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 0.85em; /* 统一字号 */
+    font-size: 0.85em;
     line-height: 1.6; 
     color: #333;
   }
@@ -352,229 +353,3 @@ layout: default
     color: #666;
   }
 </style>
-
-<!-- <style>
-  html {
-    scroll-behavior: smooth;
-    font-size: 14px;
-  }
-
-  body {
-    font-weight: normal;
-  }
-
-  .welcome-section {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 50px;
-  }
-
-  .welcome-title {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: normal; /* 显式取消加粗 */
-  }
-
-  .about-description {
-    font-size: 0.85em;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 60px;
-    font-weight: normal;
-  }
-
-  .navigation-section {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .nav-button {
-    display: inline-block;
-    margin: 0 8px;
-    padding: 8px 16px;
-    font-size: 0.7em;
-    text-decoration: none;
-    color: #333;
-    background-color: #f5f5f5;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight: normal;
-  }
-
-  .nav-button:hover {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-
-  .content-section {
-    max-width: 900px;
-    margin: 80px auto;
-    padding-top: 40px;
-    border-top: none;
-  }
-
-  .content-section h2 {
-    font-size: 1.4em;
-    margin-bottom: 24px;
-    padding-bottom: 0;
-    border-bottom: none;
-    color: #333;
-    font-weight: normal;
-  }
-
-  .content-section h3 {
-    font-size: 1em;
-    margin-bottom: 8px;
-    font-weight: normal;
-  }
-
-  .paper-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 8px 0;
-  }
-
-  .paper-item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    border-bottom: 1px solid #e0e0e0;
-    gap: 16px;
-    padding-bottom: 16px;
-  }
-
-  .paper-info {
-    flex: 1;
-    font-size: 0.85em;
-    line-height: 1.5;
-    color: #333;
-    font-weight: normal;
-  }
-
-  .paper-image img {
-    width: 120px;
-    max-height: 100px;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-top: 4px;
-  }
-
-  .author-name {
--  font-weight: normal;
-+  font-weight: bold;
-   text-decoration: none;
-}
-
-
-  .advisor {
-    color: #d9534f;
-    margin-left: 3px;
-    font-weight: normal;
-  }
-
-  .service-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 0.85em;
-    line-height: 1.5;
-    color: #333;
-    font-weight: normal;
-  }
-
-  .service-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .service-year {
-    font-style: italic;
-    color: #444;
-    min-width: 60px;
-    text-align: right;
-    padding-left: 20px;
-    font-size: 0.85em;
-    font-weight: normal;
-  }
-  
-  .experience-entry {
-    margin-bottom: 24px;
-    font-size: 0.85em;
-    line-height: 1.6;
-    color: #333;
-  }
-
-  .experience-entry a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-
-  .experience-entry a:hover {
-    text-decoration: underline;
-  }
-
-
-  .time-range {
-    color: #666;
-    font-style: italic;
-  }
-
-  .education-entry {
-  margin-bottom: 24px;
-  font-size: 0.85em;
-  line-height: 1.6;
-  color: #333;
-}
-
-.time-range {
-  float: right;
-  font-style: italic;
-  color: #666;
-}
-
-.awards-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 0.85em;
-    color: #333;
-  }
-
-  .awards-list li {
-    margin-bottom: 12px;
-    position: relative;
-    padding-right: 120px;
-  }
-
-  .award-name {
-    display: inline-block;
-    font-weight: normal;
-  }
-
-  .award-year {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-style: italic;
-    color: #666;
-    font-size: 0.85em;
-  }
-
-  .skills-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 0.85em;
-    line-height: 1.6;
-    color: #333;
-    font-weight: normal;
-  }
-
-  .skills-list li {
-    margin-bottom: 8px;
-  }
-
-</style> -->
