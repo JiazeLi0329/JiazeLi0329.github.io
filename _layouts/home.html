@@ -269,7 +269,7 @@ layout: default
     font-size: 1em; 
   }
 
-  /* /* Publications Styles */
+  /* Publications Styles
   .paper-item {
     display: flex;
     flex-direction: row;
@@ -496,3 +496,38 @@ layout: default
     color: #666;
   }
 </style>
+
+
+<script>
+  // 获取模态框
+  var modal = document.getElementById("imageModal");
+  
+  // 获取模态框里的图片元素
+  var modalImg = document.getElementById("img01");
+  
+  // 获取所有 class 为 paper-image 下的 img 元素
+  var images = document.querySelectorAll(".paper-image img");
+  
+  // 为每张图片添加点击事件
+  images.forEach(function(img) {
+    img.onclick = function(){
+      modal.style.display = "block"; // 显示模态框
+      modalImg.src = this.src;       // 将模态框图片的 src 设置为被点击图片的 src
+    }
+  });
+  
+  // 获取关闭按钮
+  var span = document.getElementsByClassName("close-btn")[0];
+  
+  // 点击 × 关闭
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  
+  // 点击背景也可以关闭（用户体验更好）
+  modal.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
