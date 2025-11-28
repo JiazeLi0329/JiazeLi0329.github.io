@@ -31,9 +31,9 @@ layout: default
   </div>
 </div>
 
-<!-- Work Experience Section -->
+<!-- Research Experience Section -->
 <div id="experience" class="content-section">
-  <h2>Work Experience</h2>
+  <h2>Research Experience</h2>
 
   <div class="experience-entry">
     <p><strong>Research Assistant</strong>
@@ -44,10 +44,10 @@ layout: default
   </div>
 
   <div class="experience-entry">
-    <p><strong>Research Assistant</strong>
+    <p><strong>Visiting Student</strong>
       <span class="time-range">Oct. 2023 – Present</span><br>
       Department of Building Environment and Energy Engineering, The Hong Kong Polytechnic University<br>
-      Supervisor: <a href="https://www.polyu.edu.hk/beee/people/academic-staff/dr-guo-zhiling/" target="_blank">Asst. Prof. Zhiling Guo</a>
+      Supervisor: <a href="https://chokurei.github.io//" target="_blank">Asst. Prof. Zhiling Guo</a>
     </p>
   </div>
 
@@ -174,9 +174,186 @@ layout: default
     </li>
   </ul>
 </div>
-
-
 <style>
+  html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+  }
+
+  body {
+    font-weight: normal;
+  }
+
+  .welcome-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 50px;
+  }
+
+  .welcome-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal; 
+  }
+
+  .about-description {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    font-weight: normal;
+  }
+
+  .content-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding-top: 40px;
+    border-top: none;
+  }
+
+  .content-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: #333;
+    font-weight: normal;
+  }
+
+  /* Education & Experience Shared Styles */
+  .education-entry, 
+  .experience-entry {
+    margin-bottom: 24px;
+    font-size: 0.85em; /* 统一字号 */
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .experience-entry a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  .experience-entry a:hover {
+    text-decoration: underline;
+  }
+
+  .time-range {
+    float: right;
+    font-style: italic;
+    color: #666;
+    font-size: 1em; /* 继承父元素大小 */
+  }
+
+  /* Publications Styles */
+  .paper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+
+  .paper-info {
+    flex: 1;
+    font-size: 0.85em; /* 统一字号 */
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .paper-image img {
+    width: 120px;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+  .author-name {
+    font-weight: bold; /* 确保名字加粗 */
+    text-decoration: none;
+  }
+
+  .advisor {
+    color: #d9534f;
+    margin-left: 3px;
+    font-weight: normal;
+  }
+
+  /* Service Styles */
+  .service-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em; /* 统一字号 */
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .service-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+   
+  .service-year {
+    font-style: italic;
+    color: #444;
+    min-width: 60px;
+    text-align: right;
+    padding-left: 20px;
+  }
+
+  /* Skills Styles */
+  .skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em; /* 统一字号 */
+    line-height: 1.6;
+    color: #333;
+    font-weight: normal;
+  }
+
+  .skills-list li {
+    margin-bottom: 8px;
+  }
+
+  /* Awards Styles */
+  .awards-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.85em; /* 统一字号 */
+    line-height: 1.6; 
+    color: #333;
+  }
+
+  .awards-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-right: 120px;
+  }
+
+  .award-name {
+    display: inline-block;
+    font-weight: normal;
+  }
+
+  .award-year {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: italic;
+    color: #666;
+  }
+</style>
+
+<!-- <style>
   html {
     scroll-behavior: smooth;
     font-size: 14px;
@@ -244,7 +421,7 @@ layout: default
     font-size: 1.4em;
     margin-bottom: 24px;
     padding-bottom: 0;
-    border-bottom: none; /* 移除下划线 */
+    border-bottom: none;
     color: #333;
     font-weight: normal;
   }
@@ -254,30 +431,6 @@ layout: default
     margin-bottom: 8px;
     font-weight: normal;
   }
-
-  /* .hobby-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    padding: 16px 0;
-  }
-
-  .hobby-card {
-    background-color: #f9f9f9;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9em;
-    font-weight: normal;
-  }
-
-  .hobby-card:hover {
-    background-color: #e0f7fa;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  } */
 
   .paper-list {
     display: flex;
@@ -348,52 +501,7 @@ layout: default
     font-size: 0.85em;
     font-weight: normal;
   }
-
-  /* .hobby-block {
-    margin-bottom: 40px;
-  }
-
-  .hobby-block h3 {
-    font-size: 1.2em;
-    margin-bottom: 12px;
-    color: #333;
-    font-weight: normal;
-  }
-  .hobby-block p {
-    font-size: 0.85em; /* ← 与 .paper-info 一致 */
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 16px;
-  }
-
-  .hobby-image {
-    text-align: center;
-    margin-top: 16px;
-  }
-
-  .hobby-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .hobby-images-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 16px;
-  }
-
-  .hobby-images-row img {
-    flex: 1 1 calc(50% - 8px);
-    max-width: 48%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  } */
+  
   .experience-entry {
     margin-bottom: 24px;
     font-size: 0.85em;
@@ -469,4 +577,4 @@ layout: default
     margin-bottom: 8px;
   }
 
-</style>
+</style> -->
