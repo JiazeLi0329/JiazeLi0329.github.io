@@ -10,7 +10,7 @@ layout: default
   <p class="about-description">
     I am currently pursuing a dual bachelor's degree in Electronic Information Engineering with <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a> and <a href="https://english.bjut.edu.cn/" target="_blank">Beijing University of Technology</a>.
     <br><br>
-    My research interests include <strong>computer vision</strong> and <strong>generative artificial intelligence</strong>. Previously, I developed several frameworks to address fundamental vision tasks in industrial scenarios such as remote sensing and intelligent transportation systems. Currently, I investigate event-based vision and 3D reconstruction to tackle challenges like motion-blur and complex reflections in dynamic environments. My goal is to reconstruct degraded visual data and enhance the reliability of machine perception in real-world scenarios.
+    My research interests include <strong>computer vision</strong> and <strong>generative artificial intelligence</strong>. Previously, I developed several frameworks to address fundamental vision tasks in complex industrial scenarios such as remote sensing and intelligent transportation systems. Currently, I investigate event-based vision and 3D reconstruction to tackle challenges like motion-blur and complex reflections in dynamic environments. My goal is to reconstruct degraded visual data and enhance the reliability of machine perception in real-world scenarios.
 </div>
 
 <!-- Education Section -->
@@ -197,6 +197,17 @@ layout: default
 
 
 <style>
+
+  .about-description {
+  /* 防止单词内部断开 */
+  word-break: keep-all; 
+  /* 禁用自动连字符 */
+  hyphens: none;
+  /* 允许在单词间换行，但不在单词内换行 */
+  overflow-wrap: break-word;
+  /* 现代浏览器优化：防止出现行末“孤儿”词，使段落排版更美观 */
+  text-wrap: pretty; 
+}
   html {
     scroll-behavior: smooth;
     font-size: 14px;
