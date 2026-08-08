@@ -58,6 +58,59 @@ layout: default
   </div>
 </div>
 
+<!-- Projects Section -->
+<div id="projects" class="content-section">
+  <h2>Projects</h2>
+
+  <div class="project-entry">
+    <p><strong>Event-Guided Diffusion Transformer for Video Frame Interpolation</strong>
+      <span class="time-range">Oct. 2025 – Jul. 2026</span><br>
+      <span class="supervisor-info">Supervised by Prof. Yongjian Deng at Data Mining and Security Lab.</span><br>
+      I developed an Event-Guided Diffusion Transformer for video frame interpolation, integrating asynchronous event streams into a DiT backbone via cross-attention to resolve severe motion blur. Additionally, I designed a motion-aware loss reweighting strategy with representation alignment, reducing LPIPS error by 21.4% and improving FloLPIPS consistency by 27.3% over SOTA baselines on Middlebury and SNU-FILM.
+    </p>
+  </div>
+
+  <div class="project-entry">
+    <p><strong>Unified Vision-Language Model for Photovoltaic Remote Sensing</strong>
+      <span class="time-range">Jul. 2025 – May 2026</span><br>
+      <span class="supervisor-info">Supervised by Prof. Zhiling Guo and Prof. Jinyue Yan at DigiEnergy Lab.</span><br>
+      This project developed a PV-specific vision-language model based on a curated 1M-pair dataset to enable zero-shot and few-shot learning for downstream photovoltaic interpretation tasks. I designed the Knowledge Assistance Module via gated-convolution to inject spatial priors for downstream few-shot adaptation, reaching 97.96% classification accuracy, 51.51% localization mSC, and +18.40% IoU gain in zero-shot segmentation, alongside a 19.35% IoU gain in 5-sample segmentation and a 16.7% AP@0.5 boost in detection.
+    </p>
+  </div>
+
+  <div class="project-entry">
+    <p><strong>Generative Foreign Object Detection in High-Speed Railway</strong>
+      <span class="time-range">Apr. 2024 – Dec. 2025</span><br>
+      <span class="supervisor-info">Supervised by Prof. Liguo Zhang at Cyber-Physical Network System Lab.</span><br>
+      This project developed a generative foreign object detection system coupling diffusion-based sample synthesis with SA-YOLO object detection to address severe data scarcity in high-speed railway environments. I developed a generation-extraction-fusion pipeline integrating a LoRA-fine-tuned Stable Diffusion model. This pipeline achieves batch synthesis of high-fidelity intrusion foreign object samples under complex lighting and dynamic high-speed rail environments, effectively enriching training distributions and overcoming annotation bottlenecks.
+    </p>
+  </div>
+
+  <div class="project-entry">
+    <p><strong>Synthetic-Driven Multimodal AI for PV Segmentation</strong>
+      <span class="time-range">Feb. 2024 – Nov. 2025</span><br>
+      <span class="supervisor-info">Supervised by Prof. Zhiling Guo at DigiEnergy Lab.</span><br>
+      This project developed a generative data synthesis and multimodal segmentation framework to tackle label scarcity and environmental interferences in urban photovoltaic remote sensing. Specifically, I built a latent diffusion framework to synthesize paired urban remote sensing images and pixel-aligned masks, where joint training with only 10 real samples increased segmentation IoU across three city test sets by 9.60%, 9.13%, and 20.55%. Additionally, I designed a physical-guided SAM decoder to eliminate shadow and reflection interference, achieving 0.9642 Precision and 0.9262 IoU.
+    </p>
+  </div>
+
+  <div class="project-entry">
+    <p><strong>Diffusion-Based Meteorological Super-Resolution for PV Estimation</strong>
+      <span class="time-range">Oct. 2023 – Sept. 2024</span><br>
+      <span class="supervisor-info">Supervised by Prof. Zhiling Guo at DigiEnergy Lab.</span><br>
+      I developed a score-based diffusion super-resolution method for multimodal meteorological data, incorporating a SwinT-DyS module that fuses shifted-window self-attention with dynamic grid upsampling to capture fine-grained spatial microclimate patterns. This method surpassed SOTA baselines across solar irradiance metrics with a 10.26% MAE reduction, 1.37% PSNR gain, and 7.41% SSIM boost, leveraging the super-resolved fields to enable 2km-resolution rooftop PV potential mapping.
+    </p>
+  </div>
+
+  <div class="project-entry">
+    <p><strong>3D Human Pose Reconstruction System</strong>
+      <span class="time-range">Sept. 2023 – May 2024</span><br>
+      <span class="supervisor-info">Supervised by Prof. Liguo Zhang at Cyber-Physical Network System Lab.</span><br>
+      I designed an edge 3D reconstruction system integrating real-time YOLOv8 pose estimation with physical geometric priors, leveraging dynamic spatial filtering to eliminate self-occlusion distortion and background noise in complex environments.
+    </p>
+  </div>
+</div>
+
 
 <!-- Publications Section -->
 <div id="publications" class="content-section">
@@ -348,6 +401,86 @@ layout: default
     color: #d9534f;
     margin-left: 3px;
     font-weight: normal;
+  }
+
+  .modal {
+  display: none; /* 默认隐藏 */
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px); 
+  justify-content: center;
+  align-items: center;
+}
+
+  .modal-content {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 70%; /* 限制最大宽度 */
+    max-height: 70%; /* 限制最大高度，防止超出一屏 */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation-name: zoom;
+    animation-duration: 0.3s;
+  }
+
+
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+    .close-btn {
+      top: 10px;
+      right: 20px;
+    }
+  }
+
+
+  /* --- Projects Styles --- */
+  .project-entry {
+    margin-bottom: 24px;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .project-entry p {
+    margin: 0;
+  }
+  
+  .supervisor-info {
+    font-style: italic;
+    color: #555;
   }
 
   .modal {
