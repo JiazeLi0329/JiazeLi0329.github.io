@@ -5,6 +5,10 @@
 - type: experience
   title: Research Experience
   anchor: experience
+
+- type: projects
+  title: Projects
+  anchor: projects
   
 - type: publications
   title: Publications
